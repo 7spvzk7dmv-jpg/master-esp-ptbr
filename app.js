@@ -1,82 +1,137 @@
 let dataset = [];
 let fraseAtual = null;
+
 let acertos = 0;
 let erros = 0;
 
-// memória simples de erros
-let dificuldade = {}; // {linha: score}
+// memória simples de dificuldade por linha
+// quanto maior o número, mais a frase reaparece
+let dificuldade = {};
 
-// níveis configurados do mais fácil ao mais difícil
-const ordemCEFR = ["A1", "A2", "B1", "B2", "C1"];
-
-// carregar dataset
+// ==========================
+// CARREGAMENTO DO DATASET
+// ==========================
 async function carregarDados() {
-  const resp = await fetch("data/frases_es.json");
-  dataset = await resp.json();
-  proximaFrase();
+  try {
+    const resp = await fetch("data/frases_es.json", {
+      cache: "no-store"
+    });
+
+    if (!resp.ok) {
+      throw new Error(`Erro HTTP ${resp.status}`);
+    }
+
+    const data = await resp.json();
+
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("JSON inválido ou vazio");
+    }
+
+    dataset = data;
+    proximaFrase();
+
+  } catch (err) {
+    console.error("Falha ao carregar frases:", err);
+    document.getElementById("fraseESP").textContent =
+      "❌ Erro ao carregar o dataset";
+  }
 }
 
+// ==========================
+// SELEÇÃO DE FRASE (SRS)
+// ==========================
 function escolherFrase() {
-  // priorizar frases com mais erros
-  const pesos = dataset.map((f) => {
-    const base = 1;
+  // pesos baseados em dificuldade
+  const pesos = dataset.map(f => {
     const penalidade = dificuldade[f.linha] || 0;
-    return base + penalidade * 3; // frases erradas mais vezes aparecem mais
+    return 1 + penalidade * 3;
   });
 
   const total = pesos.reduce((a, b) => a + b, 0);
-  let r = Math.random() * total;
+  let sorteio = Math.random() * total;
 
   for (let i = 0; i < dataset.length; i++) {
-    r -= pesos[i];
-    if (r <= 0) return dataset[i];
+    sorteio -= pesos[i];
+    if (sorteio <= 0) return dataset[i];
   }
 
   return dataset[0];
 }
 
+// ==========================
+// EXIBIÇÃO
+// ==========================
 function proximaFrase() {
   fraseAtual = escolherFrase();
 
   document.getElementById("fraseESP").textContent = fraseAtual.ESP;
   document.getElementById("linhaDisplay").textContent = fraseAtual.linha;
   document.getElementById("nivelDisplay").textContent = fraseAtual.CEFR;
+
   document.getElementById("resultado").textContent = "";
   document.getElementById("respostaUsuario").value = "";
 }
 
+// ==========================
+// ÁUDIO (Web Speech API)
+// ==========================
 function ouvirFrase() {
-  if (!fraseAtual) return;
+  if (!fraseAtual || !("speechSynthesis" in window)) return;
+
+  window.speechSynthesis.cancel();
 
   const utter = new SpeechSynthesisUtterance(fraseAtual.ESP);
   utter.lang = "es-ES";
-  speechSynthesis.speak(utter);
+  utter.rate = 0.95;
+
+  window.speechSynthesis.speak(utter);
 }
 
+// ==========================
+// CONFERÊNCIA DE RESPOSTA
+// ==========================
 function conferir() {
-  const resp = document.getElementById("respostaUsuario").value.trim();
-  const correta = fraseAtual.PTBR.trim();
+  if (!fraseAtual) return;
 
-  if (resp.toLowerCase() === correta.toLowerCase()) {
+  const resposta = document
+    .getElementById("respostaUsuario")
+    .value
+    .trim()
+    .toLowerCase();
+
+  const correta = fraseAtual.PTBR.trim().toLowerCase();
+
+  const resultadoEl = document.getElementById("resultado");
+
+  if (resposta === correta) {
     acertos++;
-    document.getElementById("resultado").textContent = "✅ Correto!";
-    document.getElementById("resultado").classList = "text-green-400 text-center text-lg";
-    dificuldade[fraseAtual.linha] = Math.max((dificuldade[fraseAtual.linha] || 0) - 1, 0);
+    resultadoEl.textContent = "✅ Correto!";
+    resultadoEl.className = "text-green-400 text-center text-lg";
+
+    dificuldade[fraseAtual.linha] =
+      Math.max((dificuldade[fraseAtual.linha] || 0) - 1, 0);
+
   } else {
     erros++;
-    document.getElementById("resultado").textContent = `❌ Errado. Correto: ${correta}`;
-    document.getElementById("resultado").classList = "text-red-400 text-center text-lg";
-    dificuldade[fraseAtual.linha] = (dificuldade[fraseAtual.linha] || 0) + 1;
+    resultadoEl.textContent = `❌ Errado. Correto: ${fraseAtual.PTBR}`;
+    resultadoEl.className = "text-red-400 text-center text-lg";
+
+    dificuldade[fraseAtual.linha] =
+      (dificuldade[fraseAtual.linha] || 0) + 1;
   }
 
   document.getElementById("acertos").textContent = acertos;
   document.getElementById("erros").textContent = erros;
 }
 
-// eventos
-document.getElementById("btnOuvir").onclick = ouvirFrase;
-document.getElementById("btnConferir").onclick = conferir;
-document.getElementById("btnProxima").onclick = proximaFrase;
+// ==========================
+// EVENTOS
+// ==========================
+document.getElementById("btnOuvir").addEventListener("click", ouvirFrase);
+document.getElementById("btnConferir").addEventListener("click", conferir);
+document.getElementById("btnProxima").addEventListener("click", proximaFrase);
 
-// iniciar
-carregarDados();
+// ==========================
+// INICIALIZAÇÃO
+// ==========================
+document.addEventListener("DOMContentLoaded", carregarDados);

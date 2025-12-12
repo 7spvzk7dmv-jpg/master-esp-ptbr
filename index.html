@@ -2,78 +2,42 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Treino ES → PTBR — SRS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header class="topbar">
-    <h1>Treino ES → PTBR</h1>
-    <div class="controls">
-      <button id="toggleTheme" aria-label="Alternar tema">🌓</button>
-      <button id="openDashboard" aria-label="Abrir painel">📊</button>
-      <a id="downloadData" href="#" download="srs_data_es.json" title="Exportar dados">💾</a>
-    </div>
+  <header class="top">
+    <h1>Treino de Tradução ES → PTBR</h1>
   </header>
 
   <main class="container">
+    <div class="card">
+      <p class="label">Frase (ESP)</p>
+      <p id="fraseEsp" class="frase">...</p>
 
-    <!-- CARTÃO PRINCIPAL -->
-    <section class="card" id="card">
+      <p class="label">Linha: <span id="linhaNum">-</span> | Nível CEFR: <span id="nivelCEFR">-</span></p>
 
-      <div class="meta">
-        <span>Linha: <strong id="linha">—</strong></span>
-        <span>Due: <strong id="due">—</strong></span>
+      <button id="btnOuvir" class="btn">Ouvir frase</button>
+
+      <div class="input-group">
+        <label for="respostaUsuario">Sua tradução (PTBR)</label>
+        <input type="text" id="respostaUsuario" autocomplete="off" placeholder="Digite aqui">
       </div>
 
-      <h2 id="fraseESP">Carregando...</h2>
+      <button id="btnConferir" class="btn btn-primary">Conferir tradução</button>
 
-      <div class="actions">
-        <button id="listenBtn">🔊 Ouvir (es-ES)</button>
-      </div>
+      <p id="resultado" class="resultado"></p>
 
-      <label for="resposta" class="sr-only">Sua tradução</label>
-      <input id="resposta" type="text" placeholder="Digite a tradução em português (PTBR)" autocomplete="off">
+      <button id="btnProxima" class="btn">Próxima frase</button>
+    </div>
 
-      <div class="buttons-grid">
-        <button id="checkBtn">Conferir tradução</button>
-        <button id="skipBtn">Próxima frase</button>
-      </div>
-
-      <div id="resultado" class="feedback" aria-live="polite"></div>
-    </section>
-
-    <!-- HISTÓRICO -->
-    <aside id="historyPanel" class="panel hidden">
-      <h3>Histórico (últimas 200 interações)</h3>
-      <ul id="historyList"></ul>
-      <button id="closeHistory">Fechar</button>
-    </aside>
-
-    <!-- DASHBOARD -->
-    <section id="dashboard" class="panel hidden">
-      <h3>Painel</h3>
-
-      <p>Total de frases: <strong id="totalCount">0</strong></p>
-      <p>Devidas agora: <strong id="dueCount">0</strong></p>
-      <p>Acertos hoje: <strong id="todayCorrect">0</strong></p>
-      <p>Erros hoje: <strong id="todayWrong">0</strong></p>
-
-      <h4>Fila inteligente</h4>
-      <small>Frases com mais lapsos aparecem com maior probabilidade.</small>
-
-      <div class="dashboard-actions">
-        <button id="exportBtn">Exportar SRS</button>
-        <button id="resetBtn">Resetar progresso</button>
-      </div>
-    </section>
-
+    <div class="stats">
+      <p>Acertos: <span id="acertos">0</span></p>
+      <p>Erros: <span id="erros">0</span></p>
+    </div>
   </main>
-
-  <footer class="footer">
-    <small>Pronúncia: espanhol (es-ES) • Funciona offline (localStorage) • Feito para GitHub Pages</small>
-  </footer>
 
   <script src="app.js"></script>
 </body>

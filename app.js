@@ -1,177 +1,94 @@
-// ==========================
-// CONFIGURAÇÕES GERAIS
-// ==========================
-
-const DATASET_URL = "data/frases_es.json";
 let frases = [];
-let filaInteligente = [];
+let fila = []; // filas SRS (erros voltam mais vezes)
 let fraseAtual = null;
 
-// Histórico local por frase (linha): acertos, erros, último resultado
-let historico = JSON.parse(localStorage.getItem("historico_es")) || {};
+let acertos = 0;
+let erros = 0;
 
-// Dificuldade interna usada pelo modo adaptativo
-let nivelAtual = "AUTO";
+async function carregarDataset() {
+    const resp = await fetch("./data/frases_es.json");
+    frases = await resp.json();
 
-// Pesos SRS para repetição inteligente
-const PESO_ACERTO = 0.8;
-const PESO_ERRO = 2.5;
+    // Inicializa fila (todas com peso 1)
+    fila = frases.map((f, idx) => ({
+        idx,
+        peso: 1
+    }));
 
-// Similaridade mínima para considerar “quase certo”
-const SIM_MIN = 0.82;
-
-
-// ==========================
-// CARREGAR DATASET
-// ==========================
-async function carregarFrases() {
-    const resposta = await fetch(DATASET_URL);
-    frases = await resposta.json();
-    construirFilaInicial();
-    proximaFrase();
+    sortearFrase();
 }
 
+function sortearFrase() {
+    // sorteio ponderado por peso
+    const total = fila.reduce((acc, f) => acc + f.peso, 0);
+    let r = Math.random() * total;
 
-// ==========================
-// FILA INTELIGENTE
-// ==========================
-function construirFilaInicial() {
-    filaInteligente = [];
-
-    frases.forEach(f => {
-        const hist = historico[f.linha] || { acertos: 0, erros: 0 };
-
-        // Score base da fila — quanto menor, mais prioritária
-        const erros = hist.erros || 0;
-        const acertos = hist.acertos || 0;
-
-        let score = 1 + erros * 2 - acertos * 0.5;
-        if (score < 1) score = 1;
-
-        filaInteligente.push({ ...f, score });
-    });
-
-    // Ordena para priorizar frases "difíceis"
-    filaInteligente.sort((a, b) => b.score - a.score);
-}
-
-
-// ==========================
-// ESCOLHA ADAPTATIVA DA FRASE
-// ==========================
-function escolherFraseAdaptativa() {
-    const distribuicao = {
-        "A1": 0.35,
-        "A2": 0.30,
-        "B1": 0.20,
-        "B2": 0.15
-    };
-
-    const r = Math.random();
-    let acumulado = 0;
-
-    for (const nivel of ["A1", "A2", "B1", "B2"]) {
-        acumulado += distribuicao[nivel];
-        if (r <= acumulado) {
-            const candidatas = filaInteligente.filter(f => f.nivel === nivel);
-            if (candidatas.length > 0) {
-                return candidatas[Math.floor(Math.random() * candidatas.length)];
-            }
+    for (const item of fila) {
+        r -= item.peso;
+        if (r <= 0) {
+            fraseAtual = frases[item.idx];
+            atualizarTela(item.idx);
+            return;
         }
     }
-
-    return filaInteligente[Math.floor(Math.random() * filaInteligente.length)];
 }
 
+function atualizarTela(idx) {
+    document.getElementById("fraseEsp").textContent = fraseAtual.ESP;
+    document.getElementById("linhaNum").textContent = idx + 1;
+    document.getElementById("nivelCEFR").textContent = fraseAtual.CEFR;
 
-// ==========================
-// EXIBIR FRASE
-// ==========================
-function proximaFrase() {
-    fraseAtual = escolherFraseAdaptativa();
-
-    document.getElementById("frase-es").innerText = fraseAtual.ESP;
-    document.getElementById("linha-info").innerText = "Linha " + fraseAtual.linha;
-    document.getElementById("resultado").innerText = "";
-    document.getElementById("resposta").value = "";
+    document.getElementById("respostaUsuario").value = "";
+    document.getElementById("resultado").textContent = "";
 }
 
-
-// ==========================
-// TTS — VOZ ESPANHOL DA ESPANHA
-// ==========================
-function falarFrase() {
-    const utter = new SpeechSynthesisUtterance(fraseAtual.ESP);
-    utter.lang = "es-ES";
-    speechSynthesis.speak(utter);
-}
-
-
-// ==========================
-// SIMILARIDADE PARA TOLERÂNCIA
-// ==========================
-function similaridade(a, b) {
-    a = a.toLowerCase().trim();
-    b = b.toLowerCase().trim();
-
-    if (a === b) return 1.0;
-
-    const arrA = a.split("");
-    const arrB = b.split("");
-    const len = Math.max(arrA.length, arrB.length);
-    let iguais = 0;
-
-    for (let i = 0; i < len; i++) {
-        if (arrA[i] === arrB[i]) iguais++;
-    }
-
-    return iguais / len;
-}
-
-
-// ==========================
-// CONFERIR TRADUÇÃO
-// ==========================
 function conferir() {
-    const resp = document.getElementById("resposta").value.trim();
+    const resposta = document.getElementById("respostaUsuario").value.trim();
     const correta = fraseAtual.PTBR.trim();
 
-    const sim = similaridade(resp, correta);
-    const acertou = sim >= SIM_MIN;
+    const resEl = document.getElementById("resultado");
 
-    atualizarHistorico(fraseAtual.linha, acertou);
+    if (!resposta) {
+        resEl.textContent = "Digite uma resposta antes de conferir.";
+        resEl.style.color = "black";
+        return;
+    }
 
-    document.getElementById("resultado").innerHTML =
-        acertou
-            ? "✔ Correto! Tradução: <b>" + correta + "</b>"
-            : "✖ Tradução incorreta.<br>Resposta correta: <b>" + correta + "</b>";
+    if (resposta.toLowerCase() === correta.toLowerCase()) {
+        acertos++;
+        resEl.textContent = "✔️ Correto!";
+        resEl.style.color = "green";
 
-    construirFilaInicial();
+        // diminui peso — aparece menos
+        const item = fila.find(f => frases[f.idx] === fraseAtual);
+        item.peso = Math.max(1, item.peso * 0.8);
+    } else {
+        erros++;
+        resEl.textContent = `❌ Incorreto. Tradução correta: ${correta}`;
+        resEl.style.color = "red";
+
+        // aumenta peso — aparece mais
+        const item = fila.find(f => frases[f.idx] === fraseAtual);
+        item.peso *= 2;
+    }
+
+    document.getElementById("acertos").textContent = acertos;
+    document.getElementById("erros").textContent = erros;
 }
 
+function ouvir() {
+    if (!("speechSynthesis" in window)) {
+        alert("Seu navegador não suporta Web Speech API.");
+        return;
+    }
 
-// ==========================
-// HISTÓRICO POR FRASE
-// ==========================
-function atualizarHistorico(linha, acertou) {
-    if (!historico[linha]) historico[linha] = { acertos: 0, erros: 0 };
-
-    if (acertou) historico[linha].acertos++;
-    else historico[linha].erros++;
-
-    localStorage.setItem("historico_es", JSON.stringify(historico));
+    const msg = new SpeechSynthesisUtterance(fraseAtual.ESP);
+    msg.lang = "es-ES";
+    window.speechSynthesis.speak(msg);
 }
 
+document.getElementById("btnConferir").addEventListener("click", conferir);
+document.getElementById("btnProxima").addEventListener("click", sortearFrase);
+document.getElementById("btnOuvir").addEventListener("click", ouvir);
 
-// ==========================
-// BOTÕES
-// ==========================
-document.getElementById("btn-ouvir").onclick = falarFrase;
-document.getElementById("btn-conferir").onclick = conferir;
-document.getElementById("btn-proxima").onclick = proximaFrase;
-
-
-// ==========================
-// INICIALIZAÇÃO
-// ==========================
-carregarFrases();
+carregarDataset();

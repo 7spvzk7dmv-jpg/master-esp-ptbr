@@ -1,54 +1,81 @@
 let dataset = [];
 let fraseAtual = null;
 
-let acertos = 0;
-let erros = 0;
+// ==========================
+// ESTADO PERSISTENTE
+// ==========================
+let estado = {
+  acertos: 0,
+  erros: 0
+};
 
-// dificuldade por linha (SRS simples)
-let dificuldade = {};
+let dificuldade = {}; // {linha: score}
 
 // ==========================
-// UTILIDADES DE TEXTO
+// LOCAL STORAGE
+// ==========================
+function salvarEstado() {
+  localStorage.setItem("srs_estado", JSON.stringify(estado));
+  localStorage.setItem("srs_dificuldade", JSON.stringify(dificuldade));
+}
+
+function carregarEstado() {
+  const est = localStorage.getItem("srs_estado");
+  const dif = localStorage.getItem("srs_dificuldade");
+
+  if (est) estado = JSON.parse(est);
+  if (dif) dificuldade = JSON.parse(dif);
+
+  document.getElementById("acertos").textContent = estado.acertos;
+  document.getElementById("erros").textContent = estado.erros;
+}
+
+// ==========================
+// NORMALIZAÇÃO DE TEXTO
 // ==========================
 function normalizarTexto(txt) {
   return txt
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^\w\s]/g, "")
+    .replace(/[\u0300-\u036f]/g, "")   // remove acentos
+    .replace(/[^\w\s]/g, "")          // remove TODA pontuação
     .replace(/\b(o|a|os|as|um|uma|uns|umas|de|do|da|dos|das)\b/g, "")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-// similaridade textual (Levenshtein simplificado)
+// ==========================
+// SIMILARIDADE (LEVENSHTEIN)
+// ==========================
 function similaridade(a, b) {
-  const matriz = [];
-  const lenA = a.length;
-  const lenB = b.length;
+  if (!a || !b) return 0;
 
-  for (let i = 0; i <= lenB; i++) matriz[i] = [i];
-  for (let j = 0; j <= lenA; j++) matriz[0][j] = j;
+  const m = [];
+  const al = a.length;
+  const bl = b.length;
 
-  for (let i = 1; i <= lenB; i++) {
-    for (let j = 1; j <= lenA; j++) {
-      matriz[i][j] =
+  for (let i = 0; i <= bl; i++) m[i] = [i];
+  for (let j = 0; j <= al; j++) m[0][j] = j;
+
+  for (let i = 1; i <= bl; i++) {
+    for (let j = 1; j <= al; j++) {
+      m[i][j] =
         b[i - 1] === a[j - 1]
-          ? matriz[i - 1][j - 1]
+          ? m[i - 1][j - 1]
           : Math.min(
-              matriz[i - 1][j - 1] + 1,
-              matriz[i][j - 1] + 1,
-              matriz[i - 1][j] + 1
+              m[i - 1][j - 1] + 1,
+              m[i][j - 1] + 1,
+              m[i - 1][j] + 1
             );
     }
   }
 
-  const dist = matriz[lenB][lenA];
-  const maxLen = Math.max(lenA, lenB);
-  return 1 - dist / maxLen;
+  return 1 - m[bl][al] / Math.max(al, bl);
 }
 
-// mapa básico de sinônimos PT-BR
+// ==========================
+// SINÔNIMOS BÁSICOS
+// ==========================
 const sinonimos = {
   cansado: ["exausto", "fatigado"],
   feliz: ["contente", "alegre"],
@@ -57,49 +84,40 @@ const sinonimos = {
   aprender: ["estudar"],
   continuar: ["seguir", "prosseguir"],
   certeza: ["seguranca"],
-  tempo: ["prazo"],
   resolver: ["solucionar"]
 };
 
 // ==========================
-// CARREGAMENTO DO DATASET
+// DATASET
 // ==========================
 async function carregarDados() {
   try {
     const resp = await fetch("data/frases_es.json", { cache: "no-store" });
-
-    if (!resp.ok) {
-      throw new Error(`Erro HTTP ${resp.status}`);
-    }
+    if (!resp.ok) throw new Error("Erro HTTP");
 
     const data = await resp.json();
+    if (!Array.isArray(data) || data.length === 0)
+      throw new Error("JSON inválido");
 
-    if (!Array.isArray(data) || data.length === 0) {
-      throw new Error("JSON inválido ou vazio");
-    }
-
-    // adiciona número da linha dinamicamente
-    dataset = data.map((item, index) => ({
+    dataset = data.map((item, i) => ({
       ...item,
-      linha: index + 1
+      linha: i + 1
     }));
 
+    carregarEstado();
     proximaFrase();
-  } catch (err) {
-    console.error("Erro ao carregar dataset:", err);
+  } catch (e) {
+    console.error(e);
     document.getElementById("fraseESP").textContent =
       "❌ Erro ao carregar o dataset";
   }
 }
 
 // ==========================
-// SELEÇÃO DE FRASE (SRS)
+// SRS – ESCOLHA DE FRASE
 // ==========================
 function escolherFrase() {
-  const pesos = dataset.map(f => {
-    const pen = dificuldade[f.linha] || 0;
-    return 1 + pen * 3;
-  });
+  const pesos = dataset.map(f => 1 + (dificuldade[f.linha] || 0) * 4);
 
   const total = pesos.reduce((a, b) => a + b, 0);
   let r = Math.random() * total;
@@ -113,7 +131,7 @@ function escolherFrase() {
 }
 
 // ==========================
-// EXIBIÇÃO
+// UI
 // ==========================
 function proximaFrase() {
   fraseAtual = escolherFrase();
@@ -127,79 +145,72 @@ function proximaFrase() {
 }
 
 // ==========================
-// ÁUDIO (Web Speech API)
+// ÁUDIO
 // ==========================
 function ouvirFrase() {
   if (!fraseAtual || !("speechSynthesis" in window)) return;
 
-  window.speechSynthesis.cancel();
-
-  const utter = new SpeechSynthesisUtterance(fraseAtual.ESP);
-  utter.lang = "es-ES";
-  utter.rate = 0.95;
-
-  window.speechSynthesis.speak(utter);
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(fraseAtual.ESP);
+  u.lang = "es-ES";
+  u.rate = 0.95;
+  speechSynthesis.speak(u);
 }
 
 // ==========================
-// CONFERÊNCIA MODERADA
+// CONFERÊNCIA INTELIGENTE
 // ==========================
 function conferir() {
   if (!fraseAtual) return;
 
-  const respostaBruta =
-    document.getElementById("respostaUsuario").value;
-
-  const corretaBruta = fraseAtual.PTBR;
-
-  const resposta = normalizarTexto(respostaBruta);
-  const correta = normalizarTexto(corretaBruta);
+  const resposta = normalizarTexto(
+    document.getElementById("respostaUsuario").value
+  );
+  const correta = normalizarTexto(fraseAtual.PTBR);
 
   let corretaFlag = false;
 
-  // 1) igualdade normalizada
   if (resposta === correta) corretaFlag = true;
+  if (similaridade(resposta, correta) >= 0.78) corretaFlag = true;
 
-  // 2) similaridade textual
-  if (similaridade(resposta, correta) >= 0.75) corretaFlag = true;
-
-  // 3) sinônimos
-  for (const chave in sinonimos) {
-    if (correta.includes(chave)) {
-      sinonimos[chave].forEach(s => {
+  for (const k in sinonimos) {
+    if (correta.includes(k)) {
+      sinonimos[k].forEach(s => {
         if (resposta.includes(s)) corretaFlag = true;
       });
     }
   }
 
-  const resultadoEl = document.getElementById("resultado");
+  const resEl = document.getElementById("resultado");
 
   if (corretaFlag) {
-    acertos++;
-    resultadoEl.textContent = "✅ Correto (sentido equivalente)";
-    resultadoEl.className = "text-green-400 text-center text-lg";
-
+    estado.acertos++;
     dificuldade[fraseAtual.linha] =
       Math.max((dificuldade[fraseAtual.linha] || 0) - 1, 0);
-  } else {
-    erros++;
-    resultadoEl.textContent = `❌ Correto esperado: ${fraseAtual.PTBR}`;
-    resultadoEl.className = "text-red-400 text-center text-lg";
 
+    resEl.textContent = "✅ Correto (sentido equivalente)";
+    resEl.className = "text-green-400 text-center text-lg";
+  } else {
+    estado.erros++;
     dificuldade[fraseAtual.linha] =
       (dificuldade[fraseAtual.linha] || 0) + 1;
+
+    resEl.textContent = `❌ Correto esperado: ${fraseAtual.PTBR}`;
+    resEl.className = "text-red-400 text-center text-lg";
   }
 
-  document.getElementById("acertos").textContent = acertos;
-  document.getElementById("erros").textContent = erros;
+  document.getElementById("acertos").textContent = estado.acertos;
+  document.getElementById("erros").textContent = estado.erros;
+
+  salvarEstado();
 }
 
 // ==========================
 // EVENTOS
 // ==========================
-document.getElementById("btnOuvir").addEventListener("click", ouvirFrase);
-document.getElementById("btnConferir").addEventListener("click", conferir);
-document.getElementById("btnProxima").addEventListener("click", proximaFrase);
+document.getElementById("btnOuvir").onclick = ouvirFrase;
+document.getElementById("btnConferir").onclick = conferir;
+document.getElementById("btnProxima").onclick = proximaFrase;
 
 // ==========================
 // INIT

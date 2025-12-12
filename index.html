@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Treino ES → PTBR — SRS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Treino ES → PTBR</h1>
+    <div class="controls">
+      <button id="toggleTheme">🌓</button>
+      <button id="openDashboard">📊</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" id="card">
+      <div class="meta">
+        <span>Linha: <strong id="linha">—</strong></span>
+        <span>Due: <strong id="due">—</strong></span>
+      </div>
+
+      <h2 id="frase">Carregando...</h2>
+
+      <button id="listenBtn">🔊 Ouvir (ES)</button>
+
+      <input id="resposta" type="text" placeholder="Digite a tradução em PTBR">
+
+      <div class="buttons-grid">
+        <button id="checkBtn">Conferir</button>
+        <button id="skipBtn">Próxima</button>
+      </div>
+
+      <div id="feedback" class="feedback"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

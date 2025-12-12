@@ -6,36 +6,74 @@
   <title>Treino ES → PTBR — SRS</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="topbar">
     <h1>Treino ES → PTBR</h1>
     <div class="controls">
-      <button id="toggleTheme">🌓</button>
-      <button id="openDashboard">📊</button>
+      <button id="toggleTheme" aria-label="Alternar tema">🌓</button>
+      <button id="openDashboard" aria-label="Abrir painel">📊</button>
+      <a id="downloadData" href="#" download="srs_data_es.json" title="Exportar dados">💾</a>
     </div>
   </header>
 
   <main class="container">
+
+    <!-- CARTÃO PRINCIPAL -->
     <section class="card" id="card">
+
       <div class="meta">
         <span>Linha: <strong id="linha">—</strong></span>
         <span>Due: <strong id="due">—</strong></span>
       </div>
 
-      <h2 id="frase">Carregando...</h2>
+      <h2 id="fraseESP">Carregando...</h2>
 
-      <button id="listenBtn">🔊 Ouvir (ES)</button>
-
-      <input id="resposta" type="text" placeholder="Digite a tradução em PTBR">
-
-      <div class="buttons-grid">
-        <button id="checkBtn">Conferir</button>
-        <button id="skipBtn">Próxima</button>
+      <div class="actions">
+        <button id="listenBtn">🔊 Ouvir (es-ES)</button>
       </div>
 
-      <div id="feedback" class="feedback"></div>
+      <label for="resposta" class="sr-only">Sua tradução</label>
+      <input id="resposta" type="text" placeholder="Digite a tradução em português (PTBR)" autocomplete="off">
+
+      <div class="buttons-grid">
+        <button id="checkBtn">Conferir tradução</button>
+        <button id="skipBtn">Próxima frase</button>
+      </div>
+
+      <div id="resultado" class="feedback" aria-live="polite"></div>
     </section>
+
+    <!-- HISTÓRICO -->
+    <aside id="historyPanel" class="panel hidden">
+      <h3>Histórico (últimas 200 interações)</h3>
+      <ul id="historyList"></ul>
+      <button id="closeHistory">Fechar</button>
+    </aside>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="panel hidden">
+      <h3>Painel</h3>
+
+      <p>Total de frases: <strong id="totalCount">0</strong></p>
+      <p>Devidas agora: <strong id="dueCount">0</strong></p>
+      <p>Acertos hoje: <strong id="todayCorrect">0</strong></p>
+      <p>Erros hoje: <strong id="todayWrong">0</strong></p>
+
+      <h4>Fila inteligente</h4>
+      <small>Frases com mais lapsos aparecem com maior probabilidade.</small>
+
+      <div class="dashboard-actions">
+        <button id="exportBtn">Exportar SRS</button>
+        <button id="resetBtn">Resetar progresso</button>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    <small>Pronúncia: espanhol (es-ES) • Funciona offline (localStorage) • Feito para GitHub Pages</small>
+  </footer>
 
   <script src="app.js"></script>
 </body>

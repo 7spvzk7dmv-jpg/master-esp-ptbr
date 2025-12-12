@@ -1,54 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Treino ES → PTBR — SRS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-let DATA_PATH = 'data/frases_es.json';
-let frases = [];
-let srs = {};
-let current = null;
+<body>
+  <header class="topbar">
+    <h1>Treino ES → PTBR</h1>
+    <div class="controls">
+      <button id="toggleTheme" aria-label="Alternar tema">🌓</button>
+      <button id="openDashboard" aria-label="Abrir painel">📊</button>
+      <a id="downloadData" href="#" download="srs_data_es.json" title="Exportar dados">💾</a>
+    </div>
+  </header>
 
-const el = {
-  linha: document.getElementById('linha'),
-  frase: document.getElementById('frase'),
-  resposta: document.getElementById('resposta'),
-  feedback: document.getElementById('feedback'),
-  listenBtn: document.getElementById('listenBtn'),
-  checkBtn: document.getElementById('checkBtn'),
-  skipBtn: document.getElementById('skipBtn'),
-  due: document.getElementById('due')
-};
+  <main class="container">
 
-function norm(s){return s.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,'').trim();}
+    <!-- CARTÃO PRINCIPAL -->
+    <section class="card" id="card">
 
-function isCorrect(a,b){
-  a=norm(a);b=norm(b);
-  if(a===b) return true;
-  return false;
-}
+      <div class="meta">
+        <span>Linha: <strong id="linha">—</strong></span>
+        <span>Due: <strong id="due">—</strong></span>
+      </div>
 
-function speak(text){
-  let u=new SpeechSynthesisUtterance(text);
-  u.lang='es-ES';
-  speechSynthesis.speak(u);
-}
+      <h2 id="fraseESP">Carregando...</h2>
 
-async function boot(){
-  frases = await fetch(DATA_PATH).then(r=>r.json());
-  nextCard();
-}
+      <div class="actions">
+        <button id="listenBtn">🔊 Ouvir (es-ES)</button>
+      </div>
 
-function nextCard(){
-  current = frases[Math.floor(Math.random()*frases.length)];
-  el.linha.textContent = current.linha;
-  el.frase.textContent = current.ESP;
-  el.resposta.value='';
-  el.feedback.textContent='';
-}
+      <label for="resposta" class="sr-only">Sua tradução</label>
+      <input id="resposta" type="text" placeholder="Digite a tradução em português (PTBR)" autocomplete="off">
 
-el.listenBtn.onclick=()=>speak(current.ESP);
+      <div class="buttons-grid">
+        <button id="checkBtn">Conferir tradução</button>
+        <button id="skipBtn">Próxima frase</button>
+      </div>
 
-el.checkBtn.onclick=()=>{
-  let ok=isCorrect(el.resposta.value,current.PTBR);
-  el.feedback.textContent = ok ? '✔️ Correto!' : '❌ Correto: '+current.PTBR;
-};
+      <div id="resultado" class="feedback" aria-live="polite"></div>
+    </section>
 
-el.skipBtn.onclick=nextCard;
+    <!-- HISTÓRICO -->
+    <aside id="historyPanel" class="panel hidden">
+      <h3>Histórico (últimas 200 interações)</h3>
+      <ul id="historyList"></ul>
+      <button id="closeHistory">Fechar</button>
+    </aside>
 
-boot();
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="panel hidden">
+      <h3>Painel</h3>
+
+      <p>Total de frases: <strong id="totalCount">0</strong></p>
+      <p>Devidas agora: <strong id="dueCount">0</strong></p>
+      <p>Acertos hoje: <strong id="todayCorrect">0</strong></p>
+      <p>Erros hoje: <strong id="todayWrong">0</strong></p>
+
+      <h4>Fila inteligente</h4>
+      <small>Frases com mais lapsos aparecem com maior probabilidade.</small>
+
+      <div class="dashboard-actions">
+        <button id="exportBtn">Exportar SRS</button>
+        <button id="resetBtn">Resetar progresso</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <small>Pronúncia: espanhol (es-ES) • Funciona offline (localStorage) • Feito para GitHub Pages</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

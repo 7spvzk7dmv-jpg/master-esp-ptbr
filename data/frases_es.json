@@ -1,511 +1,5002 @@
 [
-  { "linha": 1, "nivel": "A1", "ESP": "No tengo tiempo.", "PTBR": "Estou sem tempo." },
-  { "linha": 2, "nivel": "A1", "ESP": "No me siento bien hoy.", "PTBR": "Não estou me sentindo bem hoje." },
-  { "linha": 3", "nivel": "A1", "ESP": "¿Cómo te va?", "PTBR": "Como vai?" },
-  { "linha": 4, "nivel": "A1", "ESP": "¿Puedes ayudarme?", "PTBR": "Você pode me ajudar?" },
-  { "linha": 5, "nivel": "A1", "ESP": "Estoy ocupado ahora.", "PTBR": "Estou ocupado agora." },
-  { "linha": 6, "nivel": "A1", "ESP": "Estoy cansado.", "PTBR": "Estou cansado." },
-  { "linha": 7, "nivel": "A1", "ESP": "No entiendo.", "PTBR": "Não entendo." },
-  { "linha": 8, "nivel": "A1", "ESP": "¿Dónde están las llaves?", "PTBR": "Onde estão as chaves?" },
-  { "linha": 9, "nivel": "A1", "ESP": "Tengo hambre.", "PTBR": "Estou com fome." },
-  { "linha": 10, "nivel": "A1", "ESP": "Tengo sed.", "PTBR": "Estou com sede." },
-
-  { "linha": 11, "nivel": "A1", "ESP": "Voy de camino.", "PTBR": "Estou a caminho." },
-  { "linha": 12, "nivel": "A1", "ESP": "Estoy llegando.", "PTBR": "Estou chegando." },
-  { "linha": 13, "nivel": "A1", "ESP": "No pasa nada.", "PTBR": "Não tem problema." },
-  { "linha": 14, "nivel": "A1", "ESP": "Todo bien.", "PTBR": "Tudo bem." },
-  { "linha": 15, "nivel": "A1", "ESP": "¿Qué tal tu día?", "PTBR": "Como foi seu dia?" },
-  { "linha": 16, "nivel": "A1", "ESP": "Estoy listo.", "PTBR": "Estou pronto." },
-  { "linha": 17, "nivel": "A1", "ESP": "Estoy en casa.", "PTBR": "Estou em casa." },
-  { "linha": 18, "nivel": "A1", "ESP": "Estoy en el trabajo.", "PTBR": "Estou no trabalho." },
-  { "linha": 19, "nivel": "A1", "ESP": "Voy al supermercado.", "PTBR": "Vou ao supermercado." },
-  { "linha": 20, "nivel": "A1", "ESP": "Tengo prisa.", "PTBR": "Estou com pressa." },
-
-  { "linha": 21, "nivel": "A2", "ESP": "¿Qué opinas de esto?", "PTBR": "O que você acha disso?" },
-  { "linha": 22, "nivel": "A2", "ESP": "Creo que sí.", "PTBR": "Acho que sim." },
-  { "linha": 23, "nivel": "A2", "ESP": "Creo que no.", "PTBR": "Acho que não." },
-  { "linha": 24, "nivel": "A2", "ESP": "Tengo que pensarlo.", "PTBR": "Preciso pensar sobre isso." },
-  { "linha": 25, "nivel": "A2", "ESP": "Déjame ver.", "PTBR": "Deixa eu ver." },
-  { "linha": 26, "nivel": "A2", "ESP": "Voy a intentarlo.", "PTBR": "Vou tentar." },
-  { "linha": 27, "nivel": "A2", "ESP": "Ya veremos.", "PTBR": "Vamos ver." },
-  { "linha": 28, "nivel": "A2", "ESP": "No estoy seguro.", "PTBR": "Não tenho certeza." },
-  { "linha": 29, "nivel": "A2", "ESP": "¿Qué estás haciendo?", "PTBR": "O que você está fazendo?" },
-  { "linha": 30, "nivel": "A2", "ESP": "Estoy buscando mis gafas.", "PTBR": "Estou procurando meus óculos." },
-
-  { "linha": 31, "nivel": "A2", "ESP": "Lo siento mucho.", "PTBR": "Sinto muito." },
-  { "linha": 32, "nivel": "A2", "ESP": "No fue mi intención.", "PTBR": "Não foi minha intenção." },
-  { "linha": 33, "nivel": "A2", "ESP": "¿Puedes repetírmelo?", "PTBR": "Pode repetir?" },
-  { "linha": 34, "nivel": "A2", "ESP": "No me acuerdo.", "PTBR": "Não me lembro." },
-  { "linha": 35, "nivel": "A2", "ESP": "Estoy intentando concentrarme.", "PTBR": "Estou tentando me concentrar." },
-  { "linha": 36, "nivel": "A2", "ESP": "Eso no me convence.", "PTBR": "Isso não me convence." },
-  { "linha": 37, "nivel": "A2", "ESP": "Estoy de acuerdo contigo.", "PTBR": "Concordo com você." },
-  { "linha": 38, "nivel": "A2", "ESP": "No estoy de acuerdo.", "PTBR": "Não concordo." },
-  { "linha": 39, "nivel": "A2", "ESP": "Voy a descansar un poco.", "PTBR": "Vou descansar um pouco." },
-  { "linha": 40, "nivel": "A2", "ESP": "Necesito un momento.", "PTBR": "Preciso de um momento." },
-
-  { "linha": 41, "nivel": "A2", "ESP": "Estoy pensando en eso.", "PTBR": "Estou pensando nisso." },
-  { "linha": 42, "nivel": "A2", "ESP": "Me parece bien.", "PTBR": "Me parece bom." },
-  { "linha": 43, "nivel": "A2", "ESP": "Me parece mal.", "PTBR": "Me parece ruim." },
-  { "linha": 44, "nivel": "A2", "ESP": "¿Puedes explicarlo mejor?", "PTBR": "Pode explicar melhor?" },
-  { "linha": 45, "nivel": "A2", "ESP": "Estoy preparando todo.", "PTBR": "Estou preparando tudo." },
-  { "linha": 46, "nivel": "A2", "ESP": "Estoy haciendo lo posible.", "PTBR": "Estou fazendo o possível." },
-  { "linha": 47, "nivel": "A2", "ESP": "Eso no funciona así.", "PTBR": "Isso não funciona assim." },
-  { "linha": 48, "nivel": "A2", "ESP": "Voy a revisarlo.", "PTBR": "Vou revisar isso." },
-  { "linha": 49, "nivel": "A2", "ESP": "Estoy buscando una solución.", "PTBR": "Estou buscando uma solução." },
-  { "linha": 50, "nivel": "A2", "ESP": "No lo he decidido aún.", "PTBR": "Ainda não decidi." },
-
-  { "linha": 51, "nivel": "B1", "ESP": "Necesito organizar mi agenda.", "PTBR": "Preciso organizar minha agenda." },
-  { "linha": 52, "nivel": "B1", "ESP": "Tenemos que hablar del presupuesto.", "PTBR": "Precisamos falar sobre o orçamento." },
-  { "linha": 53, "nivel": "B1", "ESP": "No quiero dejar esto para luego.", "PTBR": "Não quero deixar isso para depois." },
-  { "linha": 54, "nivel": "B1", "ESP": "Estoy aprendiendo mucho últimamente.", "PTBR": "Tenho aprendido muito ultimamente." },
-  { "linha": 55, "nivel": "B1", "ESP": "No puedo perder más tiempo.", "PTBR": "Não posso perder mais tempo." },
-  { "linha": 56, "nivel": "B1", "ESP": "Tenemos que solucionar esto cuanto antes.", "PTBR": "Temos que resolver isso o quanto antes." },
-  { "linha": 57, "nivel": "B1", "ESP": "Me preocupa el resultado.", "PTBR": "Estou preocupado com o resultado." },
-  { "linha": 58, "nivel": "B1", "ESP": "No esperaba este problema.", "PTBR": "Eu não esperava este problema." },
-  { "linha": 59, "nivel": "B1", "ESP": "Voy a hacer un descanso después de comer.", "PTBR": "Vou fazer uma pausa depois do almoço." },
-  { "linha": 60, "nivel": "B1", "ESP": "Tenemos que cumplir el plazo.", "PTBR": "Precisamos cumprir o prazo." },
-
-  { "linha": 61, "nivel": "B1", "ESP": "No estoy seguro de cómo proceder.", "PTBR": "Não sei ao certo como proceder." },
-  { "linha": 62, "nivel": "B1", "ESP": "Estoy intentando mejorar en esto.", "PTBR": "Estou tentando melhorar nisso." },
-  { "linha": 63, "nivel": "B1", "ESP": "El equipo necesita más tiempo.", "PTBR": "A equipe precisa de mais tempo." },
-  { "linha": 64, "nivel": "B1", "ESP": "Nos falta información para avanzar.", "PTBR": "Falta informação para avançar." },
-  { "linha": 65, "nivel": "B1", "ESP": "Estoy organizando los documentos.", "PTBR": "Estou organizando os documentos." },
-  { "linha": 66, "nivel": "B1", "ESP": "Hemos tenido algunos retrasos.", "PTBR": "Tivemos alguns atrasos." },
-  { "linha": 67, "nivel": "B1", "ESP": "No me siento preparado para eso.", "PTBR": "Não me sinto preparado para isso." },
-  { "linha": 68, "nivel": "B1", "ESP": "Estoy revisando los detalles finales.", "PTBR": "Estou revisando os detalhes finais." },
-  { "linha": 69, "nivel": "B1", "ESP": "Necesito priorizar mis tareas.", "PTBR": "Preciso priorizar minhas tarefas." },
-  { "linha": 70, "nivel": "B1", "ESP": "Agradezco tu ayuda.", "PTBR": "Agradeço sua ajuda." },
-
-  { "linha": 71, "nivel": "B2", "ESP": "Deberíamos analizar esta situación con calma.", "PTBR": "Deveríamos analisar esta situação com calma." },
-  { "linha": 72, "nivel": "B2", "ESP": "Estoy intentando anticipar posibles problemas.", "PTBR": "Estou tentando antecipar possíveis problemas." },
-  { "linha": 73, "nivel": "B2", "ESP": "Es fundamental evaluar todas las opciones.", "PTBR": "É fundamental avaliar todas as opções." },
-  { "linha": 74, "nivel": "B2", "ESP": "Agradecería una explicación más detallada.", "PTBR": "Agradeceria uma explicação mais detalhada." },
-  { "linha": 75, "nivel": "B2", "ESP": "Tenemos que replantear la estrategia.", "PTBR": "Precisamos repensar a estratégia." },
-  { "linha": 76, "nivel": "B2", "ESP": "Prefiero esperar antes de decidir.", "PTBR": "Prefiro esperar antes de decidir." },
-  { "linha": 77, "nivel": "B2", "ESP": "Creo que estamos avanzando en la dirección correcta.", "PTBR": "Acho que estamos avançando na direção certa." },
-  { "linha": 78, "nivel": "B2", "ESP": "Necesitamos un plan más sólido.", "PTBR": "Precisamos de um plano mais sólido." },
-  { "linha": 79, "nivel": "B2", "ESP": "La situación es más compleja de lo que parece.", "PTBR": "A situação é mais complexa do que parece." },
-  { "linha": 80, "nivel": "B2", "ESP": "Voy a tenerlo en cuenta.", "PTBR": "Vou levar isso em consideração." },
-
-  { "linha": 81, "nivel": "B2", "ESP": "Me preocupa que no lleguemos a tiempo.", "PTBR": "Me preocupa que não cheguemos a tempo." },
-  { "linha": 82, "nivel": "B2", "ESP": "Tenemos que coordinar mejor el trabajo.", "PTBR": "Precisamos coordenar melhor o trabalho." },
-  { "linha": 83, "nivel": "B2", "ESP": "La comunicación es esencial en este proceso.", "PTBR": "A comunicação é essencial nesse processo." },
-  { "linha": 84, "nivel": "B2", "ESP": "Podríamos buscar una alternativa más eficiente.", "PTBR": "Poderíamos buscar uma alternativa mais eficiente." },
-  { "linha": 85, "nivel": "B2", "ESP": "Voy a revisar los datos nuevamente.", "PTBR": "Vou revisar os dados novamente." },
-  { "linha": 86, "nivel": "B2", "ESP": "Necesitamos ajustar algunos detalles.", "PTBR": "Precisamos ajustar alguns detalhes." },
-  { "linha": 87, "nivel": "B2", "ESP": "Creo que deberíamos reorganizar las tareas.", "PTBR": "Acho que deveríamos reorganizar as tarefas." },
-  { "linha": 88, "nivel": "B2", "ESP": "Voy a preparar un informe más completo.", "PTBR": "Vou preparar um relatório mais completo." },
-  { "linha": 89, "nivel": "B2", "ESP": "La decisión final depende de varios factores.", "PTBR": "A decisão final depende de vários fatores." },
-  { "linha": 90, "nivel": "B2", "ESP": "Sería ideal evitar más retrasos.", "PTBR": "Seria ideal evitar mais atrasos." },
-
-  { "linha": 91, "nivel": "B2", "ESP": "Tenemos que actuar con más precisión.", "PTBR": "Precisamos agir com mais precisão." },
-  { "linha": 92, "nivel": "B2", "ESP": "Voy a elaborar un plan alternativo.", "PTBR": "Vou elaborar um plano alternativo." },
-  { "linha": 93, "nivel": "B2", "ESP": "Es importante revisar cada punto cuidadosamente.", "PTBR": "É importante revisar cada ponto cuidadosamente." },
-  { "linha": 94, "nivel": "B2", "ESP": "No podemos permitir más errores.", "PTBR": "Não podemos permitir mais erros." },
-  { "linha": 95, "nivel": "B2", "ESP": "Tenemos que asegurarnos de que todo encaje.", "PTBR": "Precisamos garantir que tudo se encaixe." },
-  { "linha": 96, "nivel": "B2", "ESP": "Voy a presentar algunas sugerencias mañana.", "PTBR": "Vou apresentar algumas sugestões amanhã." },
-  { "linha": 97, "nivel": "B2", "ESP": "Es necesario revisar el presupuesto completo.", "PTBR": "É necessário revisar o orçamento completo." },
-  { "linha": 98, "nivel": "B2", "ESP": "Estoy analizando los posibles riesgos.", "PTBR": "Estou analisando os possíveis riscos." },
-  { "linha": 99, "nivel": "B2", "ESP": "La situación requiere una respuesta rápida.", "PTBR": "A situação exige uma resposta rápida." },
-  { "linha": 100, "nivel": "B2", "ESP": "Tenemos que trabajar de forma más coordinada.", "PTBR": "Precisamos trabalhar de forma mais coordenada." }
-]
-[
-  { "linha": 101, "nivel": "B2", "ESP": "Vamos a coordinar la reunión.", "PTBR": "Vamos coordenar a reunião." },
-  { "linha": 102, "nivel": "B2", "ESP": "Necesito confirmar los detalles.", "PTBR": "Preciso confirmar os detalhes." },
-  { "linha": 103, "nivel": "B2", "ESP": "¿Puedes ayudarme con esto?", "PTBR": "Você pode me ajudar com isso?" },
-  { "linha": 104, "nivel": "B2", "ESP": "Estamos avanzando en la dirección correcta.", "PTBR": "Estamos avançando na direção certa." },
-  { "linha": 105, "nivel": "B2", "ESP": "Esto es más complicado de lo que pensaba.", "PTBR": "Isso é mais complicado do que eu pensava." },
-  { "linha": 106, "nivel": "B2", "ESP": "La información que recibimos es contradictoria.", "PTBR": "A informação que recebemos é contraditória." },
-  { "linha": 107, "nivel": "B2", "ESP": "¿Podemos discutirlo más tarde?", "PTBR": "Podemos discutir isso mais tarde?" },
-  { "linha": 108, "nivel": "B2", "ESP": "Es necesario aclarar algunos puntos.", "PTBR": "É necessário esclarecer alguns pontos." },
-  { "linha": 109, "nivel": "B2", "ESP": "El informe está casi listo.", "PTBR": "O relatório está quase pronto." },
-  { "linha": 110, "nivel": "B2", "ESP": "Tenemos que tomar una decisión pronto.", "PTBR": "Precisamos tomar uma decisão logo." },
-
-  { "linha": 111, "nivel": "B2", "ESP": "La situación requiere un enfoque diferente.", "PTBR": "A situação exige uma abordagem diferente." },
-  { "linha": 112, "nivel": "B2", "ESP": "No hemos considerado todos los aspectos.", "PTBR": "Não consideramos todos os aspectos." },
-  { "linha": 113, "nivel": "B2", "ESP": "Estamos en el proceso de reestructuración.", "PTBR": "Estamos no processo de reestruturação." },
-  { "linha": 114, "nivel": "B2", "ESP": "Voy a esperar hasta tener más información.", "PTBR": "Vou esperar até ter mais informações." },
-  { "linha": 115, "nivel": "B2", "ESP": "Necesitamos realizar un seguimiento más cercano.", "PTBR": "Precisamos fazer um acompanhamento mais próximo." },
-  { "linha": 116, "nivel": "B2", "ESP": "El tiempo de respuesta es crítico en este caso.", "PTBR": "O tempo de resposta é crítico neste caso." },
-  { "linha": 117, "nivel": "B2", "ESP": "Estamos explorando varias opciones.", "PTBR": "Estamos explorando várias opções." },
-  { "linha": 118, "nivel": "B2", "ESP": "Es imperativo tomar una decisión ahora.", "PTBR": "É imperativo tomar uma decisão agora." },
-  { "linha": 119, "nivel": "B2", "ESP": "Voy a presentar una propuesta la próxima semana.", "PTBR": "Vou apresentar uma proposta na próxima semana." },
-  { "linha": 120, "nivel": "B2", "ESP": "El equipo está trabajando en la solución.", "PTBR": "A equipe está trabalhando na solução." },
-
-  { "linha": 121, "nivel": "B2", "ESP": "Estamos haciendo todo lo posible para resolverlo.", "PTBR": "Estamos fazendo tudo o possível para resolver isso." },
-  { "linha": 122, "nivel": "B2", "ESP": "Estamos esperando los resultados del análisis.", "PTBR": "Estamos aguardando os resultados da análise." },
-  { "linha": 123, "nivel": "B2", "ESP": "No podemos permitir más retrasos.", "PTBR": "Não podemos permitir mais atrasos." },
-  { "linha": 124, "nivel": "B2", "ESP": "Debemos actuar con rapidez para evitar problemas.", "PTBR": "Precisamos agir rapidamente para evitar problemas." },
-  { "linha": 125, "nivel": "B2", "ESP": "La comunicación entre los equipos es fundamental.", "PTBR": "A comunicação entre as equipes é fundamental." },
-  { "linha": 126, "nivel": "B2", "ESP": "Vamos a revisar los detalles de nuevo.", "PTBR": "Vamos revisar os detalhes novamente." },
-  { "linha": 127, "nivel": "B2", "ESP": "Es crucial mantenernos organizados.", "PTBR": "É crucial nos mantermos organizados." },
-  { "linha": 128, "nivel": "B2", "ESP": "Tenemos que tomar decisiones informadas.", "PTBR": "Precisamos tomar decisões informadas." },
-  { "linha": 129, "nivel": "B2", "ESP": "El plazo es más ajustado de lo que esperaba.", "PTBR": "O prazo está mais apertado do que eu esperava." },
-  { "linha": 130, "nivel": "B2", "ESP": "La situación está fuera de nuestro control.", "PTBR": "A situação está fora do nosso controle." },
-
-  { "linha": 131, "nivel": "B2", "ESP": "Es importante no perder de vista los objetivos.", "PTBR": "É importante não perder de vista os objetivos." },
-  { "linha": 132, "nivel": "B2", "ESP": "Tenemos que evaluar todos los riesgos posibles.", "PTBR": "Precisamos avaliar todos os riscos possíveis." },
-  { "linha": 133, "nivel": "B2", "ESP": "Voy a preparar un informe detallado.", "PTBR": "Vou preparar um relatório detalhado." },
-  { "linha": 134, "nivel": "B2", "ESP": "Necesitamos planificar con anticipación.", "PTBR": "Precisamos planejar com antecedência." },
-  { "linha": 135, "nivel": "B2", "ESP": "Estamos haciendo progresos en la solución.", "PTBR": "Estamos fazendo progressos na solução." },
-  { "linha": 136, "nivel": "B2", "ESP": "Esto no es tan sencillo como parece.", "PTBR": "Isso não é tão simples quanto parece." },
-  { "linha": 137, "nivel": "B2", "ESP": "El equipo está analizando varias soluciones.", "PTBR": "A equipe está analisando várias soluções." },
-  { "linha": 138, "nivel": "B2", "ESP": "Voy a coordinar con los otros departamentos.", "PTBR": "Vou coordenar com os outros departamentos." },
-  { "linha": 139, "nivel": "B2", "ESP": "Necesitamos ajustar nuestro enfoque.", "PTBR": "Precisamos ajustar nossa abordagem." },
-  { "linha": 140, "nivel": "B2", "ESP": "Esto requiere una evaluación más profunda.", "PTBR": "Isso exige uma avaliação mais profunda." },
-
-  { "linha": 141, "nivel": "B2", "ESP": "Es importante que todos estén informados.", "PTBR": "É importante que todos estejam informados." },
-  { "linha": 142, "nivel": "B2", "ESP": "Voy a recopilar toda la información necesaria.", "PTBR": "Vou reunir todas as informações necessárias." },
-  { "linha": 143, "nivel": "B2", "ESP": "Estamos analizando los posibles escenarios.", "PTBR": "Estamos analisando os possíveis cenários." },
-  { "linha": 144, "nivel": "B2", "ESP": "Necesitamos tomar una decisión estratégica.", "PTBR": "Precisamos tomar uma decisão estratégica." },
-  { "linha": 145, "nivel": "B2", "ESP": "La situación se está complicando más de lo esperado.", "PTBR": "A situação está ficando mais complicada do que o esperado." },
-  { "linha": 146, "nivel": "B2", "ESP": "Es vital que mantengamos la calma.", "PTBR": "É vital que mantenhamos a calma." },
-  { "linha": 147, "nivel": "B2", "ESP": "Tenemos que asegurarnos de que todo esté en orden.", "PTBR": "Precisamos garantir que tudo esteja em ordem." },
-  { "linha": 148, "nivel": "B2", "ESP": "Vamos a revisar el plan de acción.", "PTBR": "Vamos revisar o plano de ação." },
-  { "linha": 149, "nivel": "B2", "ESP": "El objetivo es alcanzar los resultados establecidos.", "PTBR": "O objetivo é alcançar os resultados estabelecidos." },
-  { "linha": 150, "nivel": "B2", "ESP": "Vamos a trabajar más estrechamente juntos.", "PTBR": "Vamos trabalhar mais de perto juntos." },
-
-  { "linha": 151, "nivel": "B2", "ESP": "Es necesario involucrar a todos los departamentos.", "PTBR": "É necessário envolver todos os departamentos." },
-  { "linha": 152, "nivel": "B2", "ESP": "Necesitamos discutir los detalles antes de tomar decisiones.", "PTBR": "Precisamos discutir os detalhes antes de tomar decisões." },
-  { "linha": 153, "nivel": "B2", "ESP": "La solución debe ser implementada lo antes posible.", "PTBR": "A solução deve ser implementada o quanto antes." },
-  { "linha": 154, "nivel": "B2", "ESP": "El proyecto está tomando más tiempo de lo esperado.", "PTBR": "O projeto está levando mais tempo do que o esperado." },
-  { "linha": 155, "nivel": "B2", "ESP": "Estamos buscando formas de mejorar el proceso.", "PTBR": "Estamos buscando maneiras de melhorar o processo." },
-  { "linha": 156, "nivel": "B2", "ESP": "El equipo está listo para asumir nuevos retos.", "PTBR": "A equipe está pronta para assumir novos desafios." },
-  { "linha": 157, "nivel": "B2", "ESP": "Vamos a implementar los cambios necesarios.", "PTBR": "Vamos implementar as mudanças necessárias." },
-  { "linha": 158, "nivel": "B2", "ESP": "Es importante mantener la coherencia en todo el proceso.", "PTBR": "É importante manter a coerência em todo o processo." },
-  { "linha": 159, "nivel": "B2", "ESP": "La prioridad es terminar este proyecto a tiempo.", "PTBR": "A prioridade é terminar esse projeto a tempo." },
-  { "linha": 160, "nivel": "B2", "ESP": "Estamos comprometidos a alcanzar los objetivos establecidos.", "PTBR": "Estamos comprometidos em alcançar os objetivos estabelecidos." }
-]
-[
-  { "linha": 201, "nivel": "B2", "ESP": "Hay que revisar los procedimientos actuales.", "PTBR": "É preciso revisar os procedimentos atuais." },
-  { "linha": 202, "nivel": "B2", "ESP": "Tenemos que anticipar posibles dificultades.", "PTBR": "Precisamos antecipar possíveis dificuldades." },
-  { "linha": 203, "nivel": "B2", "ESP": "Voy a informar al equipo sobre los cambios.", "PTBR": "Vou informar a equipe sobre as mudanças." },
-  { "linha": 204, "nivel": "B2", "ESP": "Es esencial mantener una comunicación constante.", "PTBR": "É essencial manter uma comunicação constante." },
-  { "linha": 205, "nivel": "B2", "ESP": "Tenemos que analizar la situación con más detalle.", "PTBR": "Precisamos analisar a situação com mais detalhes." },
-  { "linha": 206, "nivel": "B2", "ESP": "Aún no hemos definido los próximos pasos.", "PTBR": "Ainda não definimos os próximos passos." },
-  { "linha": 207, "nivel": "B2", "ESP": "Voy a revisar los datos antes de seguir adelante.", "PTBR": "Vou revisar os dados antes de seguir adiante." },
-  { "linha": 208, "nivel": "B2", "ESP": "Tenemos que optimizar el proceso para ganar tiempo.", "PTBR": "Precisamos otimizar o processo para ganhar tempo." },
-  { "linha": 209, "nivel": "B2", "ESP": "La decisión final dependerá del análisis.", "PTBR": "A decisão final dependerá da análise." },
-  { "linha": 210, "nivel": "B2", "ESP": "Es crucial evaluar cada opción con cuidado.", "PTBR": "É crucial avaliar cada opção com cuidado." },
-
-  { "linha": 211, "nivel": "B2", "ESP": "El proyecto requiere una coordinación más precisa.", "PTBR": "O projeto exige uma coordenação mais precisa." },
-  { "linha": 212, "nivel": "B2", "ESP": "Estamos supervisando el progreso del equipo.", "PTBR": "Estamos supervisionando o progresso da equipe." },
-  { "linha": 213, "nivel": "B2", "ESP": "Necesitamos establecer prioridades claras.", "PTBR": "Precisamos estabelecer prioridades claras." },
-  { "linha": 214, "nivel": "B2", "ESP": "Voy a actualizar los documentos según lo acordado.", "PTBR": "Vou atualizar os documentos conforme combinado." },
-  { "linha": 215, "nivel": "B2", "ESP": "Tenemos que adaptarnos a los nuevos requisitos.", "PTBR": "Precisamos nos adaptar aos novos requisitos." },
-  { "linha": 216, "nivel": "B2", "ESP": "El equipo está evaluando las alternativas disponibles.", "PTBR": "A equipe está avaliando as alternativas disponíveis." },
-  { "linha": 217, "nivel": "B2", "ESP": "Es fundamental identificar los puntos críticos.", "PTBR": "É fundamental identificar os pontos críticos." },
-  { "linha": 218, "nivel": "B2", "ESP": "Tenemos que asegurarnos de que todo sea coherente.", "PTBR": "Precisamos garantir que tudo seja coerente." },
-  { "linha": 219, "nivel": "B2", "ESP": "Voy a coordinar con el departamento correspondiente.", "PTBR": "Vou coordenar com o departamento correspondente." },
-  { "linha": 220, "nivel": "B2", "ESP": "Es indispensable revisar el informe final.", "PTBR": "É indispensável revisar o relatório final." },
-
-  { "linha": 221, "nivel": "B2", "ESP": "Tenemos que mejorar la gestión del tiempo.", "PTBR": "Precisamos melhorar a gestão do tempo." },
-  { "linha": 222, "nivel": "B2", "ESP": "La situación requiere un seguimiento constante.", "PTBR": "A situação exige um acompanhamento constante." },
-  { "linha": 223, "nivel": "B2", "ESP": "Estamos considerando nuevas alternativas.", "PTBR": "Estamos considerando novas alternativas." },
-  { "linha": 224, "nivel": "B2", "ESP": "Necesitamos definir una estrategia clara.", "PTBR": "Precisamos definir uma estratégia clara." },
-  { "linha": 225, "nivel": "B2", "ESP": "Voy a preparar un resumen para la reunión.", "PTBR": "Vou preparar um resumo para a reunião." },
-  { "linha": 226, "nivel": "B2", "ESP": "Tenemos que ser más eficientes.", "PTBR": "Precisamos ser mais eficientes." },
-  { "linha": 227, "nivel": "B2", "ESP": "El análisis inicial mostró algunos problemas.", "PTBR": "A análise inicial mostrou alguns problemas." },
-  { "linha": 228, "nivel": "B2", "ESP": "Es necesario hacer ajustes en el plan.", "PTBR": "É necessário fazer ajustes no plano." },
-  { "linha": 229, "nivel": "B2", "ESP": "Estamos trabajando para evitar futuros errores.", "PTBR": "Estamos trabalhando para evitar erros futuros." },
-  { "linha": 230, "nivel": "B2", "ESP": "La situación está evolucionando rápidamente.", "PTBR": "A situação está evoluindo rapidamente." },
-
-  { "linha": 231, "nivel": "A1", "ESP": "Hace frío hoy.", "PTBR": "Está frio hoje." },
-  { "linha": 232, "nivel": "A1", "ESP": "Tengo sueño.", "PTBR": "Estou com sono." },
-  { "linha": 233, "nivel": "A1", "ESP": "¿Qué hora es?", "PTBR": "Que horas são?" },
-  { "linha": 234, "nivel": "A1", "ESP": "Hace calor afuera.", "PTBR": "Está calor lá fora." },
-  { "linha": 235, "nivel": "A1", "ESP": "Voy a ducharme.", "PTBR": "Vou tomar banho." },
-  { "linha": 236, "nivel": "A1", "ESP": "Estoy en el coche.", "PTBR": "Estou no carro." },
-  { "linha": 237, "nivel": "A1", "ESP": "Tengo que salir.", "PTBR": "Eu tenho que sair." },
-  { "linha": 238, "nivel": "A1", "ESP": "Estoy viendo la tele.", "PTBR": "Estou assistindo TV." },
-  { "linha": 239, "nivel": "A1", "ESP": "Mi casa está cerca.", "PTBR": "Minha casa é perto." },
-  { "linha": 240, "nivel": "A1", "ESP": "Estoy aquí.", "PTBR": "Estou aqui." },
-
-  { "linha": 241, "nivel": "A1", "ESP": "Estoy allí.", "PTBR": "Estou ali." },
-  { "linha": 242, "nivel": "A1", "ESP": "No estoy en casa.", "PTBR": "Não estou em casa." },
-  { "linha": 243, "nivel": "A1", "ESP": "Voy en camino.", "PTBR": "Estou a caminho." },
-  { "linha": 244, "nivel": "A1", "ESP": "Me gusta este lugar.", "PTBR": "Gosto deste lugar." },
-  { "linha": 245, "nivel": "A1", "ESP": "No me gusta eso.", "PTBR": "Não gosto disso." },
-  { "linha": 246, "nivel": "A1", "ESP": "Estoy bien.", "PTBR": "Estou bem." },
-  { "linha": 247, "nivel": "A1", "ESP": "No estoy bien.", "PTBR": "Não estou bem." },
-  { "linha": 248, "nivel": "A1", "ESP": "¿Dónde vives?", "PTBR": "Onde você mora?" },
-  { "linha": 249, "nivel": "A1", "ESP": "Vivo cerca de aquí.", "PTBR": "Moro perto daqui." },
-  { "linha": 250, "nivel": "A1", "ESP": "Estoy esperando.", "PTBR": "Estou esperando." },
-
-  { "linha": 251, "nivel": "A2", "ESP": "No estoy seguro de qué hacer.", "PTBR": "Não tenho certeza do que fazer." },
-  { "linha": 252, "nivel": "A2", "ESP": "Estoy pensando en cambiar de trabajo.", "PTBR": "Estou pensando em mudar de trabalho." },
-  { "linha": 253, "nivel": "A2", "ESP": "Voy a salir un rato.", "PTBR": "Vou sair por um tempo." },
-  { "linha": 254, "nivel": "A2", "ESP": "¿Quieres venir conmigo?", "PTBR": "Quer vir comigo?" },
-  { "linha": 255, "nivel": "A2", "ESP": "Estoy preparando la cena.", "PTBR": "Estou preparando o jantar." },
-  { "linha": 256, "nivel": "A2", "ESP": "Voy a tomar algo.", "PTBR": "Vou beber algo." },
-  { "linha": 257, "nivel": "A2", "ESP": "No me apetece salir hoy.", "PTBR": "Não estou com vontade de sair hoje." },
-  { "linha": 258, "nivel": "A2", "ESP": "Estoy intentando aprender español.", "PTBR": "Estou tentando aprender espanhol." },
-  { "linha": 259, "nivel": "A2", "ESP": "Tengo que aprender más vocabulario.", "PTBR": "Preciso aprender mais vocabulário." },
-  { "linha": 260, "nivel": "A2", "ESP": "Voy a llamar más tarde.", "PTBR": "Vou ligar mais tarde." },
-
-  { "linha": 261, "nivel": "A2", "ESP": "Estoy buscando un sitio tranquilo.", "PTBR": "Estou procurando um lugar tranquilo." },
-  { "linha": 262, "nivel": "A2", "ESP": "No he comido nada aún.", "PTBR": "Ainda não comi nada." },
-  { "linha": 263, "nivel": "A2", "ESP": "Voy a comprar algo de comida.", "PTBR": "Vou comprar algo para comer." },
-  { "linha": 264, "nivel": "A2", "ESP": "Estoy intentando relajarme.", "PTBR": "Estou tentando relaxar." },
-  { "linha": 265, "nivel": "A2", "ESP": "Tengo que organizar mi tiempo.", "PTBR": "Preciso organizar meu tempo." },
-  { "linha": 266, "nivel": "A2", "ESP": "No sé qué elegir.", "PTBR": "Não sei o que escolher." },
-  { "linha": 267, "nivel": "A2", "ESP": "Voy a esperar un poco más.", "PTBR": "Vou esperar mais um pouco." },
-  { "linha": 268, "nivel": "A2", "ESP": "Estoy intentando mejorar mi pronunciación.", "PTBR": "Estou tentando melhorar minha pronúncia." },
-  { "linha": 269, "nivel": "A2", "ESP": "¿Puedes recomendarme algo?", "PTBR": "Pode me recomendar algo?" },
-  { "linha": 270, "nivel": "A2", "ESP": "No quiero complicar las cosas.", "PTBR": "Não quero complicar as coisas." },
-
-  { "linha": 271, "nivel": "A2", "ESP": "Estoy buscando una solución práctica.", "PTBR": "Estou buscando uma solução prática." },
-  { "linha": 272, "nivel": "A2", "ESP": "Tengo que cambiar mis planes.", "PTBR": "Preciso mudar meus planos." },
-  { "linha": 273, "nivel": "A2", "ESP": "Estoy intentando ahorrar dinero.", "PTBR": "Estou tentando economizar dinheiro." },
-  { "linha": 274, "nivel": "A2", "ESP": "Voy a tomar una decisión pronto.", "PTBR": "Vou tomar uma decisão em breve." },
-  { "linha": 275, "nivel": "A2", "ESP": "No quiero retrasar más esto.", "PTBR": "Não quero atrasar mais isso." },
-  { "linha": 276, "nivel": "A2", "ESP": "Estoy buscando más información.", "PTBR": "Estou buscando mais informações." },
-  { "linha": 277, "nivel": "A2", "ESP": "No me gusta esperar tanto.", "PTBR": "Não gosto de esperar tanto." },
-  { "linha": 278, "nivel": "A2", "ESP": "Estoy intentando ser más paciente.", "PTBR": "Estou tentando ser mais paciente." },
-  { "linha": 279, "nivel": "A2", "ESP": "Tengo que actualizar mis documentos.", "PTBR": "Preciso atualizar meus documentos." },
-  { "linha": 280, "nivel": "A2", "ESP": "Voy a organizar mis cosas.", "PTBR": "Vou organizar minhas coisas." },
-
-  { "linha": 281, "nivel": "A2", "ESP": "Estoy buscando algo diferente.", "PTBR": "Estou buscando algo diferente." },
-  { "linha": 282, "nivel": "A2", "ESP": "No sé cómo empezar.", "PTBR": "Não sei por onde começar." },
-  { "linha": 283, "nivel": "A2", "ESP": "Voy a tomar un descanso.", "PTBR": "Vou fazer uma pausa." },
-  { "linha": 284, "nivel": "A2", "ESP": "Estoy intentando organizar mis ideas.", "PTBR": "Estou tentando organizar minhas ideias." },
-  { "linha": 285, "nivel": "A2", "ESP": "No he dormido bien.", "PTBR": "Não dormi bem." },
-  { "linha": 286, "nivel": "A2", "ESP": "Tengo que limpiar la casa.", "PTBR": "Preciso limpar a casa." },
-  { "linha": 287, "nivel": "A2", "ESP": "Voy a cocinar algo sencillo.", "PTBR": "Vou cozinhar algo simples." },
-  { "linha": 288, "nivel": "A2", "ESP": "Estoy aprendiendo a ser más organizado.", "PTBR": "Estou aprendendo a ser mais organizado." },
-  { "linha": 289, "nivel": "A2", "ESP": "No sé qué voy a hacer mañana.", "PTBR": "Não sei o que vou fazer amanhã." },
-  { "linha": 290, "nivel": "A2", "ESP": "Estoy intentando mejorar mis hábitos.", "PTBR": "Estou tentando melhorar meus hábitos." },
-
-  { "linha": 291, "nivel": "A2", "ESP": "Tengo que preparar algunas cosas.", "PTBR": "Preciso preparar algumas coisas." },
-  { "linha": 292, "nivel": "A2", "ESP": "Voy a salir a caminar.", "PTBR": "Vou sair para caminhar." },
-  { "linha": 293, "nivel": "A2", "ESP": "Estoy pensando en empezar un curso nuevo.", "PTBR": "Estou pensando em começar um curso novo." },
-  { "linha": 294, "nivel": "A2", "ESP": "No me apetece hacer nada hoy.", "PTBR": "Não estou com vontade de fazer nada hoje." },
-  { "linha": 295, "nivel": "A2", "ESP": "Tengo que terminar algunos pendientes.", "PTBR": "Preciso terminar algumas pendências." },
-  { "linha": 296, "nivel": "A2", "ESP": "Estoy buscando un sitio para estudiar.", "PTBR": "Estou procurando um lugar para estudar." },
-  { "linha": 297, "nivel": "A2", "ESP": "Voy a revisar mis correos.", "PTBR": "Vou revisar meus e-mails." },
-  { "linha": 298, "nivel": "A2", "ESP": "Estoy intentando concentrarme mejor.", "PTBR": "Estou tentando me concentrar melhor." },
-  { "linha": 299, "nivel": "A2", "ESP": "No sé cómo explicarlo bien.", "PTBR": "Não sei explicar isso direito." },
-  { "linha": 300, "nivel": "A2", "ESP": "Estoy buscando una solución sencilla.", "PTBR": "Estou buscando uma solução simples." }
-]
-[
-  { "linha": 301, "nivel": "B1", "ESP": "No esperaba que fuera tan difícil.", "PTBR": "Eu não esperava que fosse tão difícil." },
-  { "linha": 302, "nivel": "B1", "ESP": "Estoy intentando acostumbrarme al cambio.", "PTBR": "Estou tentando me acostumar com a mudança." },
-  { "linha": 303, "nivel": "B1", "ESP": "Tenemos que encontrar una alternativa.", "PTBR": "Precisamos encontrar uma alternativa." },
-  { "linha": 304, "nivel": "B1", "ESP": "Voy a revisar todo otra vez.", "PTBR": "Vou revisar tudo novamente." },
-  { "linha": 305, "nivel": "B1", "ESP": "Es mejor hacerlo con calma.", "PTBR": "É melhor fazer isso com calma." },
-  { "linha": 306, "nivel": "B1", "ESP": "Estoy intentando entender la situación.", "PTBR": "Estou tentando entender a situação." },
-  { "linha": 307, "nivel": "B1", "ESP": "No quiero precipitarme con la decisión.", "PTBR": "Não quero me precipitar na decisão." },
-  { "linha": 308, "nivel": "B1", "ESP": "Tenemos que comunicarnos mejor.", "PTBR": "Precisamos nos comunicar melhor." },
-  { "linha": 309, "nivel": "B1", "ESP": "No esperaba una reacción tan fuerte.", "PTBR": "Eu não esperava uma reação tão forte." },
-  { "linha": 310, "nivel": "B1", "ESP": "Estoy intentando organizar mis tareas.", "PTBR": "Estou tentando organizar minhas tarefas." },
-
-  { "linha": 311, "nivel": "B1", "ESP": "Voy a enviar el informe esta tarde.", "PTBR": "Vou enviar o relatório esta tarde." },
-  { "linha": 312, "nivel": "B1", "ESP": "Tenemos que revisar los plazos.", "PTBR": "Precisamos revisar os prazos." },
-  { "linha": 313, "nivel": "B1", "ESP": "Estoy esperando una respuesta.", "PTBR": "Estou esperando uma resposta." },
-  { "linha": 314, "nivel": "B1", "ESP": "No sé si es la mejor opción.", "PTBR": "Não sei se é a melhor opção." },
-  { "linha": 315, "nivel": "B1", "ESP": "Voy a escribirlo para no olvidarlo.", "PTBR": "Vou anotar para não esquecer." },
-  { "linha": 316, "nivel": "B1", "ESP": "Tenemos que preparar todo antes del viernes.", "PTBR": "Precisamos preparar tudo antes de sexta." },
-  { "linha": 317, "nivel": "B1", "ESP": "No quiero cometer el mismo error.", "PTBR": "Não quero cometer o mesmo erro." },
-  { "linha": 318, "nivel": "B1", "ESP": "El resultado no fue el esperado.", "PTBR": "O resultado não foi o esperado." },
-  { "linha": 319, "nivel": "B1", "ESP": "Estoy intentando mejorar poco a poco.", "PTBR": "Estou tentando melhorar aos poucos." },
-  { "linha": 320, "nivel": "B1", "ESP": "Tenemos que hablar de esto con calma.", "PTBR": "Precisamos conversar sobre isso com calma." },
-
-  { "linha": 321, "nivel": "A1", "ESP": "Me duele la cabeza.", "PTBR": "Estou com dor de cabeça." },
-  { "linha": 322, "nivel": "A1", "ESP": "Estoy enfermo.", "PTBR": "Estou doente." },
-  { "linha": 323, "nivel": "A1", "ESP": "Voy al médico.", "PTBR": "Vou ao médico." },
-  { "linha": 324, "nivel": "A1", "ESP": "Estoy tomando un café.", "PTBR": "Estou tomando um café." },
-  { "linha": 325, "nivel": "A1", "ESP": "Hace mucho viento.", "PTBR": "Está muito vento." },
-  { "linha": 326, "nivel": "A1", "ESP": "Estoy esperando el autobús.", "PTBR": "Estou esperando o ônibus." },
-  { "linha": 327, "nivel": "A1", "ESP": "Tengo que ir al banco.", "PTBR": "Preciso ir ao banco." },
-  { "linha": 328, "nivel": "A1", "ESP": "Mi familia vive lejos.", "PTBR": "Minha família mora longe." },
-  { "linha": 329, "nivel": "A1", "ESP": "Estoy aprendiendo cosas nuevas.", "PTBR": "Estou aprendendo coisas novas." },
-  { "linha": 330, "nivel": "A1", "ESP": "Me gusta leer.", "PTBR": "Eu gosto de ler." },
-
-  { "linha": 331, "nivel": "A1", "ESP": "Voy a comprar pan.", "PTBR": "Vou comprar pão." },
-  { "linha": 332, "nivel": "A1", "ESP": "Tengo frío en las manos.", "PTBR": "Minhas mãos estão frias." },
-  { "linha": 333, "nivel": "A1", "ESP": "Estoy escuchando música.", "PTBR": "Estou ouvindo música." },
-  { "linha": 334, "nivel": "A1", "ESP": "No tengo ganas de salir.", "PTBR": "Não tenho vontade de sair." },
-  { "linha": 335, "nivel": "A1", "ESP": "Me gusta este café.", "PTBR": "Eu gosto deste café." },
-  { "linha": 336, "nivel": "A1", "ESP": "Estoy en el centro.", "PTBR": "Estou no centro." },
-  { "linha": 337, "nivel": "A1", "ESP": "Voy de compras.", "PTBR": "Vou fazer compras." },
-  { "linha": 338, "nivel": "A1", "ESP": "Estoy buscando mis llaves.", "PTBR": "Estou procurando minhas chaves." },
-  { "linha": 339, "nivel": "A1", "ESP": "Tengo que estudiar.", "PTBR": "Tenho que estudar." },
-  { "linha": 340, "nivel": "A1", "ESP": "Estoy hablando por teléfono.", "PTBR": "Estou falando ao telefone." },
-
-  { "linha": 341, "nivel": "A2", "ESP": "Estoy intentando dormir mejor.", "PTBR": "Estou tentando dormir melhor." },
-  { "linha": 342, "nivel": "A2", "ESP": "Voy a salir a tomar aire.", "PTBR": "Vou sair para tomar um ar." },
-  { "linha": 343, "nivel": "A2", "ESP": "Estoy buscando un sitio para comer.", "PTBR": "Estou procurando um lugar para comer." },
-  { "linha": 344, "nivel": "A2", "ESP": "Tengo que ahorrar más.", "PTBR": "Preciso economizar mais." },
-  { "linha": 345, "nivel": "A2", "ESP": "Voy a organizar mis papeles.", "PTBR": "Vou organizar meus papéis." },
-  { "linha": 346, "nivel": "A2", "ESP": "Estoy intentando no preocuparme.", "PTBR": "Estou tentando não me preocupar." },
-  { "linha": 347, "nivel": "A2", "ESP": "No sé si tengo tiempo para eso.", "PTBR": "Não sei se tenho tempo para isso." },
-  { "linha": 348, "nivel": "A2", "ESP": "Voy a comprar algunos regalos.", "PTBR": "Vou comprar alguns presentes." },
-  { "linha": 349, "nivel": "A2", "ESP": "Estoy preparando mis cosas para mañana.", "PTBR": "Estou preparando minhas coisas para amanhã." },
-  { "linha": 350, "nivel": "A2", "ESP": "Tengo que levantarme temprano.", "PTBR": "Tenho que acordar cedo." },
-
-  { "linha": 351, "nivel": "A2", "ESP": "Estoy pensando en viajar pronto.", "PTBR": "Estou pensando em viajar em breve." },
-  { "linha": 352, "nivel": "A2", "ESP": "Voy a comprar billetes online.", "PTBR": "Vou comprar passagens online." },
-  { "linha": 353, "nivel": "A2", "ESP": "Estoy buscando un hotel barato.", "PTBR": "Estou procurando um hotel barato." },
-  { "linha": 354, "nivel": "A2", "ESP": "No sé qué ropa llevar.", "PTBR": "Não sei que roupa levar." },
-  { "linha": 355, "nivel": "A2", "ESP": "Voy a poner una lavadora.", "PTBR": "Vou colocar uma máquina para lavar." },
-  { "linha": 356, "nivel": "A2", "ESP": "Estoy limpiando la casa.", "PTBR": "Estou limpando a casa." },
-  { "linha": 357, "nivel": "A2", "ESP": "Tengo que preparar la comida.", "PTBR": "Tenho que preparar a comida." },
-  { "linha": 358, "nivel": "A2", "ESP": "Voy a organizar mi armario.", "PTBR": "Vou organizar meu guarda-roupa." },
-  { "linha": 359, "nivel": "A2", "ESP": "Estoy intentando comer más sano.", "PTBR": "Estou tentando comer mais saudável." },
-  { "linha": 360, "nivel": "A2", "ESP": "Tengo que sacar la basura.", "PTBR": "Tenho que tirar o lixo." },
-
-  { "linha": 361, "nivel": "A2", "ESP": "Estoy preparando mi mochila.", "PTBR": "Estou preparando minha mochila." },
-  { "linha": 362, "nivel": "A2", "ESP": "No he decidido qué hacer el fin de semana.", "PTBR": "Ainda não decidi o que fazer no fim de semana." },
-  { "linha": 363, "nivel": "A2", "ESP": "Voy a visitar a unos amigos.", "PTBR": "Vou visitar alguns amigos." },
-  { "linha": 364, "nivel": "A2", "ESP": "Estoy buscando un regalo para mi madre.", "PTBR": "Estou procurando um presente para minha mãe." },
-  { "linha": 365, "nivel": "A2", "ESP": "No tengo ganas de cocinar hoy.", "PTBR": "Não estou com vontade de cozinhar hoje." },
-  { "linha": 366, "nivel": "A2", "ESP": "Voy a pedir comida a domicilio.", "PTBR": "Vou pedir comida delivery." },
-  { "linha": 367, "nivel": "A2", "ESP": "Estoy viendo qué opciones tengo.", "PTBR": "Estou vendo quais opções tenho." },
-  { "linha": 368, "nivel": "A2", "ESP": "Tengo que hacer una llamada importante.", "PTBR": "Tenho que fazer uma ligação importante." },
-  { "linha": 369, "nivel": "A2", "ESP": "Voy a escribir algunos correos.", "PTBR": "Vou escrever alguns e-mails." },
-  { "linha": 370, "nivel": "A2", "ESP": "Estoy intentando organizar mi tiempo mejor.", "PTBR": "Estou tentando organizar melhor meu tempo." },
-
-  { "linha": 371, "nivel": "B1", "ESP": "No esperaba que tardara tanto.", "PTBR": "Eu não esperava que demorasse tanto." },
-  { "linha": 372, "nivel": "B1", "ESP": "Estoy intentando encontrar una solución.", "PTBR": "Estou tentando encontrar uma solução." },
-  { "linha": 373, "nivel": "B1", "ESP": "Tenemos que hablar con más calma.", "PTBR": "Precisamos conversar com mais calma." },
-  { "linha": 374, "nivel": "B1", "ESP": "Voy a organizar mis prioridades.", "PTBR": "Vou organizar minhas prioridades." },
-  { "linha": 375, "nivel": "B1", "ESP": "No me siento preparado para eso.", "PTBR": "Não me sinto preparado para isso." },
-  { "linha": 376, "nivel": "B1", "ESP": "Estoy intentando adaptarme.", "PTBR": "Estou tentando me adaptar." },
-  { "linha": 377, "nivel": "B1", "ESP": "El resultado fue mejor de lo esperado.", "PTBR": "O resultado foi melhor do que o esperado." },
-  { "linha": 378, "nivel": "B1", "ESP": "Voy a escribir todo para no olvidarlo.", "PTBR": "Vou escrever tudo para não esquecer." },
-  { "linha": 379, "nivel": "B1", "ESP": "Tenemos que revisar el presupuesto.", "PTBR": "Precisamos revisar o orçamento." },
-  { "linha": 380, "nivel": "B1", "ESP": "Estoy tratando de evitar errores.", "PTBR": "Estou tentando evitar erros." },
-
-  { "linha": 381, "nivel": "B1", "ESP": "Voy a preparar todo con antelación.", "PTBR": "Vou preparar tudo com antecedência." },
-  { "linha": 382, "nivel": "B1", "ESP": "Tenemos que analizar los datos con calma.", "PTBR": "Precisamos analisar os dados com calma." },
-  { "linha": 383, "nivel": "B1", "ESP": "No estaba al tanto de esa información.", "PTBR": "Eu não estava ciente dessa informação." },
-  { "linha": 384, "nivel": "B1", "ESP": "Estoy intentando mejorar mis hábitos.", "PTBR": "Estou tentando melhorar meus hábitos." },
-  { "linha": 385, "nivel": "B1", "ESP": "Tengo que gestionar mejor mi tiempo.", "PTBR": "Preciso gerenciar melhor meu tempo." },
-  { "linha": 386, "nivel": "B1", "ESP": "No esperaba tantas dificultades.", "PTBR": "Eu não esperava tantas dificuldades." },
-  { "linha": 387, "nivel": "B1", "ESP": "Estoy intentando ser más disciplinado.", "PTBR": "Estou tentando ser mais disciplinado." },
-  { "linha": 388, "nivel": "B1", "ESP": "Tenemos que mejorar nuestra comunicación.", "PTBR": "Precisamos melhorar nossa comunicação." },
-  { "linha": 389, "nivel": "B1", "ESP": "Voy a revisar los documentos detenidamente.", "PTBR": "Vou revisar os documentos cuidadosamente." },
-  { "linha": 390, "nivel": "B1", "ESP": "Estoy intentando organizarlo todo.", "PTBR": "Estou tentando organizar tudo." },
-
-  { "linha": 391, "nivel": "B1", "ESP": "No sé si es la mejor decisión.", "PTBR": "Não sei se é a melhor decisão." },
-  { "linha": 392, "nivel": "B1", "ESP": "Estoy tratando de pensar con claridad.", "PTBR": "Estou tentando pensar com clareza." },
-  { "linha": 393, "nivel": "B1", "ESP": "Tenemos que planificar mejor.", "PTBR": "Precisamos planejar melhor." },
-  { "linha": 394, "nivel": "B1", "ESP": "Voy a pedir ayuda si la necesito.", "PTBR": "Vou pedir ajuda se precisar." },
-  { "linha": 395, "nivel": "B1", "ESP": "Estoy intentando mejorar paso a paso.", "PTBR": "Estou tentando melhorar passo a passo." },
-  { "linha": 396, "nivel": "B1", "ESP": "No esperaba un cambio tan rápido.", "PTBR": "Eu não esperava uma mudança tão rápida." },
-  { "linha": 397, "nivel": "B1", "ESP": "Estoy revisando todo antes de enviar.", "PTBR": "Estou revisando tudo antes de enviar." },
-  { "linha": 398, "nivel": "B1", "ESP": "Tenemos que pensar en una nueva estrategia.", "PTBR": "Precisamos pensar em uma nova estratégia." },
-  { "linha": 399, "nivel": "B1", "ESP": "Voy a comprobar los datos otra vez.", "PTBR": "Vou verificar os dados novamente." },
-  { "linha": 400, "nivel": "B1", "ESP": "Estoy intentando no distraerme.", "PTBR": "Estou tentando não me distrair." }
-]
-[
-  { "linha": 401, "nivel": "B1", "ESP": "No quiero cometer errores innecesarios.", "PTBR": "Não quero cometer erros desnecessários." },
-  { "linha": 402, "nivel": "B1", "ESP": "Estoy tratando de pensar en alternativas.", "PTBR": "Estou tentando pensar em alternativas." },
-  { "linha": 403, "nivel": "B1", "ESP": "Tenemos que ponernos de acuerdo.", "PTBR": "Precisamos entrar em acordo." },
-  { "linha": 404, "nivel": "B1", "ESP": "Voy a preparar la presentación.", "PTBR": "Vou preparar a apresentação." },
-  { "linha": 405, "nivel": "B1", "ESP": "Estoy intentando entender lo que pasó.", "PTBR": "Estou tentando entender o que aconteceu." },
-  { "linha": 406, "nivel": "B1", "ESP": "No esperaba una respuesta tan rápida.", "PTBR": "Eu não esperava uma resposta tão rápida." },
-  { "linha": 407, "nivel": "B1", "ESP": "Estoy organizando mis ideas antes de hablar.", "PTBR": "Estou organizando minhas ideias antes de falar." },
-  { "linha": 408, "nivel": "B1", "ESP": "Tenemos que revisar el plan inicial.", "PTBR": "Precisamos revisar o plano inicial." },
-  { "linha": 409, "nivel": "B1", "ESP": "Voy a pensar en ello un poco más.", "PTBR": "Vou pensar um pouco mais sobre isso." },
-  { "linha": 410, "nivel": "B1", "ESP": "Estoy intentando mantenerme enfocado.", "PTBR": "Estou tentando manter o foco." },
-
-  { "linha": 411, "nivel": "A1", "ESP": "Tengo hambre.", "PTBR": "Estou com fome." },
-  { "linha": 412, "nivel": "A1", "ESP": "Estoy cansado.", "PTBR": "Estou cansado." },
-  { "linha": 413, "nivel": "A1", "ESP": "Voy a dormir.", "PTBR": "Vou dormir." },
-  { "linha": 414, "nivel": "A1", "ESP": "Tengo sed.", "PTBR": "Estou com sede." },
-  { "linha": 415, "nivel": "A1", "ESP": "Estoy en casa.", "PTBR": "Estou em casa." },
-  { "linha": 416, "nivel": "A1", "ESP": "Voy al supermercado.", "PTBR": "Vou ao supermercado." },
-  { "linha": 417, "nivel": "A1", "ESP": "Hace sol hoy.", "PTBR": "Está sol hoje." },
-  { "linha": 418, "nivel": "A1", "ESP": "Estoy cocinando.", "PTBR": "Estou cozinhando." },
-  { "linha": 419, "nivel": "A1", "ESP": "Tengo frío.", "PTBR": "Estou com frio." },
-  { "linha": 420, "nivel": "A1", "ESP": "Estoy listo.", "PTBR": "Estou pronto." },
-
-  { "linha": 421, "nivel": "A1", "ESP": "Voy a limpiar mi habitación.", "PTBR": "Vou limpar meu quarto." },
-  { "linha": 422, "nivel": "A1", "ESP": "Estoy tomando agua.", "PTBR": "Estou tomando água." },
-  { "linha": 423, "nivel": "A1", "ESP": "Tengo que irme ya.", "PTBR": "Preciso ir agora." },
-  { "linha": 424, "nivel": "A1", "ESP": "Estoy aprendiendo español.", "PTBR": "Estou aprendendo espanhol." },
-  { "linha": 425, "nivel": "A1", "ESP": "Voy al trabajo.", "PTBR": "Vou para o trabalho." },
-  { "linha": 426, "nivel": "A1", "ESP": "Estoy esperando a un amigo.", "PTBR": "Estou esperando um amigo." },
-  { "linha": 427, "nivel": "A1", "ESP": "Tengo que hacer la compra.", "PTBR": "Tenho que fazer compras." },
-  { "linha": 428, "nivel": "A1", "ESP": "Estoy cerrando la puerta.", "PTBR": "Estou fechando a porta." },
-  { "linha": 429, "nivel": "A1", "ESP": "Voy a salir ahora.", "PTBR": "Vou sair agora." },
-  { "linha": 430, "nivel": "A1", "ESP": "Estoy abriendo la ventana.", "PTBR": "Estou abrindo a janela." },
-
-  { "linha": 431, "nivel": "A2", "ESP": "Estoy intentando organizar mi horario.", "PTBR": "Estou tentando organizar meus horários." },
-  { "linha": 432, "nivel": "A2", "ESP": "Voy a cambiar mis planes.", "PTBR": "Vou mudar meus planos." },
-  { "linha": 433, "nivel": "A2", "ESP": "Tengo que hacer unas llamadas.", "PTBR": "Preciso fazer algumas ligações." },
-  { "linha": 434, "nivel": "A2", "ESP": "Estoy buscando un sitio tranquilo para estudiar.", "PTBR": "Estou procurando um lugar tranquilo para estudar." },
-  { "linha": 435, "nivel": "A2", "ESP": "Voy a preparar algo de comer.", "PTBR": "Vou preparar algo para comer." },
-  { "linha": 436, "nivel": "A2", "ESP": "Tengo que pensar bien mi decisión.", "PTBR": "Preciso pensar bem na minha decisão." },
-  { "linha": 437, "nivel": "A2", "ESP": "Estoy intentando no estresarme.", "PTBR": "Estou tentando não ficar estressado." },
-  { "linha": 438, "nivel": "A2", "ESP": "Voy a buscar información online.", "PTBR": "Vou buscar informação online." },
-  { "linha": 439, "nivel": "A2", "ESP": "Tengo que preparar mis documentos.", "PTBR": "Preciso preparar meus documentos." },
-  { "linha": 440, "nivel": "A2", "ESP": "Estoy viendo qué opciones tengo.", "PTBR": "Estou vendo quais opções tenho." },
-
-  { "linha": 441, "nivel": "A2", "ESP": "Voy a tomar un descanso pequeño.", "PTBR": "Vou fazer uma pequena pausa." },
-  { "linha": 442, "nivel": "A2", "ESP": "Tengo que limpiar la cocina.", "PTBR": "Preciso limpar a cozinha." },
-  { "linha": 443, "nivel": "A2", "ESP": "Estoy intentando ahorrar tiempo.", "PTBR": "Estou tentando economizar tempo." },
-  { "linha": 444, "nivel": "A2", "ESP": "Voy a cambiar mi rutina.", "PTBR": "Vou mudar minha rotina." },
-  { "linha": 445, "nivel": "A2", "ESP": "Tengo que comer más saludable.", "PTBR": "Preciso comer de forma mais saudável." },
-  { "linha": 446, "nivel": "A2", "ESP": "Estoy intentando mejorar mi acento.", "PTBR": "Estou tentando melhorar meu sotaque." },
-  { "linha": 447, "nivel": "A2", "ESP": "Voy a revisar mis tareas pendientes.", "PTBR": "Vou revisar minhas tarefas pendentes." },
-  { "linha": 448, "nivel": "A2", "ESP": "Tengo que hablar con mi jefe mañana.", "PTBR": "Preciso falar com meu chefe amanhã." },
-  { "linha": 449, "nivel": "A2", "ESP": "Estoy buscando un nuevo proyecto.", "PTBR": "Estou buscando um novo projeto." },
-  { "linha": 450, "nivel": "A2", "ESP": "Voy a pensar en ello más tarde.", "PTBR": "Vou pensar nisso mais tarde." },
-
-  { "linha": 451, "nivel": "B2", "ESP": "Tenemos que actuar antes de que sea tarde.", "PTBR": "Precisamos agir antes que seja tarde." },
-  { "linha": 452, "nivel": "B2", "ESP": "Voy a proponer una alternativa viable.", "PTBR": "Vou propor uma alternativa viável." },
-  { "linha": 453, "nivel": "B2", "ESP": "Es necesario evaluar el impacto de cada decisión.", "PTBR": "É necessário avaliar o impacto de cada decisão." },
-  { "linha": 454, "nivel": "B2", "ESP": "Estamos considerando cambios importantes.", "PTBR": "Estamos considerando mudanças importantes." },
-  { "linha": 455, "nivel": "B2", "ESP": "Voy a revisar todo de manera exhaustiva.", "PTBR": "Vou revisar tudo de forma completa." },
-  { "linha": 456, "nivel": "B2", "ESP": "Tenemos que coordinar los esfuerzos del equipo.", "PTBR": "Precisamos coordenar os esforços da equipe." },
-  { "linha": 457, "nivel": "B2", "ESP": "Es fundamental mantener la calidad del trabajo.", "PTBR": "É fundamental manter a qualidade do trabalho." },
-  { "linha": 458, "nivel": "B2", "ESP": "Voy a preparar un plan alternativo.", "PTBR": "Vou preparar um plano alternativo." },
-  { "linha": 459, "nivel": "B2", "ESP": "Estamos evaluando la viabilidad del nuevo proyecto.", "PTBR": "Estamos avaliando a viabilidade do novo projeto." },
-  { "linha": 460, "nivel": "B2", "ESP": "Es importante evitar cualquier malentendido.", "PTBR": "É importante evitar qualquer mal-entendido." },
-
-  { "linha": 461, "nivel": "B2", "ESP": "Voy a recopilar la información necesaria.", "PTBR": "Vou reunir as informações necessárias." },
-  { "linha": 462, "nivel": "B2", "ESP": "Tenemos que anticipar posibles problemas.", "PTBR": "Precisamos antecipar possíveis problemas." },
-  { "linha": 463, "nivel": "B2", "ESP": "Es crucial planificar con suficiente tiempo.", "PTBR": "É crucial planejar com antecedência suficiente." },
-  { "linha": 464, "nivel": "B2", "ESP": "Voy a hacer una revisión final.", "PTBR": "Vou fazer uma revisão final." },
-  { "linha": 465, "nivel": "B2", "ESP": "Estamos trabajando en una estrategia más eficiente.", "PTBR": "Estamos trabalhando em uma estratégia mais eficiente." },
-  { "linha": 466, "nivel": "B2", "ESP": "Es necesario asegurarnos de que todo esté claro.", "PTBR": "É necessário garantir que tudo esteja claro." },
-  { "linha": 467, "nivel": "B2", "ESP": "Voy a preparar una propuesta detallada.", "PTBR": "Vou preparar uma proposta detalhada." },
-  { "linha": 468, "nivel": "B2", "ESP": "Tenemos que evitar retrasos innecesarios.", "PTBR": "Precisamos evitar atrasos desnecessários." },
-  { "linha": 469, "nivel": "B2", "ESP": "Es esencial actuar con precisión.", "PTBR": "É essencial agir com precisão." },
-  { "linha": 470, "nivel": "B2", "ESP": "Voy a coordinar las tareas de cada miembro.", "PTBR": "Vou coordenar as tarefas de cada membro." },
-
-  { "linha": 471, "nivel": "B2", "ESP": "Estamos reorganizando el cronograma del proyecto.", "PTBR": "Estamos reorganizando o cronograma do projeto." },
-  { "linha": 472, "nivel": "B2", "ESP": "Es importante mantener la transparencia del proceso.", "PTBR": "É importante manter a transparência do processo." },
-  { "linha": 473, "nivel": "B2", "ESP": "Voy a revisar los resultados preliminares.", "PTBR": "Vou revisar os resultados preliminares." },
-  { "linha": 474, "nivel": "B2", "ESP": "Tenemos que coordinar una reunión urgente.", "PTBR": "Precisamos coordenar uma reunião urgente." },
-  { "linha": 475, "nivel": "B2", "ESP": "Es crucial analizar cada detalle cuidadosamente.", "PTBR": "É crucial analisar cada detalhe cuidadosamente." },
-  { "linha": 476, "nivel": "B2", "ESP": "Voy a preparar un resumen ejecutivo.", "PTBR": "Vou preparar um resumo executivo." },
-  { "linha": 477, "nivel": "B2", "ESP": "Estamos identificando los puntos débiles del sistema.", "PTBR": "Estamos identificando os pontos fracos do sistema." },
-  { "linha": 478, "nivel": "B2", "ESP": "Es fundamental mejorar la eficiencia del proceso.", "PTBR": "É fundamental melhorar a eficiência do processo." },
-  { "linha": 479, "nivel": "B2", "ESP": "Voy a tomar nota de los puntos clave.", "PTBR": "Vou anotar os pontos principais." },
-  { "linha": 480, "nivel": "B2", "ESP": "Tenemos que trabajar de manera más coordinada.", "PTBR": "Precisamos trabalhar de maneira mais coordenada." },
-
-  { "linha": 481, "nivel": "B2", "ESP": "Es necesario revisar la documentación completa.", "PTBR": "É necessário revisar toda a documentação." },
-  { "linha": 482, "nivel": "B2", "ESP": "Voy a actualizar los datos del sistema.", "PTBR": "Vou atualizar os dados do sistema." },
-  { "linha": 483, "nivel": "B2", "ESP": "Estamos reorganizando las prioridades del proyecto.", "PTBR": "Estamos reorganizando as prioridades do projeto." },
-  { "linha": 484, "nivel": "B2", "ESP": "Es esencial definir responsabilidades claras.", "PTBR": "É essencial definir responsabilidades claras." },
-  { "linha": 485, "nivel": "B2", "ESP": "Voy a enviar un informe detallado.", "PTBR": "Vou enviar um relatório detalhado." },
-  { "linha": 486, "nivel": "B2", "ESP": "Estamos considerando cambios estructurales.", "PTBR": "Estamos considerando mudanças estruturais." },
-  { "linha": 487, "nivel": "B2", "ESP": "Es necesario evaluar el rendimiento del equipo.", "PTBR": "É necessário avaliar o desempenho da equipe." },
-  { "linha": 488, "nivel": "B2", "ESP": "Voy a programar una reunión adicional.", "PTBR": "Vou agendar uma reunião adicional." },
-  { "linha": 489, "nivel": "B2", "ESP": "Estamos ajustando el plan según los resultados.", "PTBR": "Estamos ajustando o plano conforme os resultados." },
-  { "linha": 490, "nivel": "B2", "ESP": "Es fundamental garantizar la precisión de los datos.", "PTBR": "É fundamental garantir a precisão dos dados." },
-
-  { "linha": 491, "nivel": "B2", "ESP": "Voy a organizar los documentos importantes.", "PTBR": "Vou organizar os documentos importantes." },
-  { "linha": 492, "nivel": "B2", "ESP": "Tenemos que analizar los errores anteriores.", "PTBR": "Precisamos analisar os erros anteriores." },
-  { "linha": 493, "nivel": "B2", "ESP": "Es esencial actuar con responsabilidad.", "PTBR": "É essencial agir com responsabilidade." },
-  { "linha": 494, "nivel": "B2", "ESP": "Voy a preparar la versión final del informe.", "PTBR": "Vou preparar a versão final do relatório." },
-  { "linha": 495, "nivel": "B2", "ESP": "Estamos revisando el proceso completo.", "PTBR": "Estamos revisando todo o processo." },
-  { "linha": 496, "nivel": "B2", "ESP": "Es necesario coordinar mejor los recursos.", "PTBR": "É necessário coordenar melhor os recursos." },
-  { "linha": 497, "nivel": "B2", "ESP": "Voy a evaluar las opciones disponibles.", "PTBR": "Vou avaliar as opções disponíveis." },
-  { "linha": 498, "nivel": "B2", "ESP": "Estamos ajustando algunos procedimientos internos.", "PTBR": "Estamos ajustando alguns procedimentos internos." },
-  { "linha": 499, "nivel": "B2", "ESP": "Es crucial mantener el plan actualizado.", "PTBR": "É crucial manter o plano atualizado." },
-  { "linha": 500, "nivel": "B2", "ESP": "Voy a preparar los siguientes pasos del proyecto.", "PTBR": "Vou preparar os próximos passos do projeto." }
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy feliz.",
+    "PTBR":"Estou feliz.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero descansar.",
+    "PTBR":"Quero descansar.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una idea.",
+    "PTBR":"Eu tenho uma ideia.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito ayuda.",
+    "PTBR":"Preciso de ajuda.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Me gustaría viajar más.",
+    "PTBR":"Eu gostaria de viajar mais.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero agua.",
+    "PTBR":"Quero água.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Necesito dinero.",
+    "PTBR":"Preciso de dinheiro.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo una pregunta.",
+    "PTBR":"Eu tenho uma pergunta.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy cansado.",
+    "PTBR":"Estou cansado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien la implementación sea desafiante, debemos seguir avanzando.",
+    "PTBR":"Embora a implementação seja desafiadora, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Es fundamental que se evalúen los riesgos.",
+    "PTBR":"É fundamental que se avaliem os riscos.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"A pesar de las dificultades, sigo adelante.",
+    "PTBR":"Apesar de as dificuldades, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Yo tengo un perro.",
+    "PTBR":"Eu tenho um cachorro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Es fundamental que tomemos decisiones informadas.",
+    "PTBR":"É fundamental que tomemos decisões informadas.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Es fundamental que se analice el contexto.",
+    "PTBR":"É fundamental que se analise o contexto.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Yo tengo un libro.",
+    "PTBR":"Eu tenho um livro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Necesito tiempo.",
+    "PTBR":"Preciso de tempo.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Me gustaría aprender otro idioma.",
+    "PTBR":"Eu gostaria de aprender outro idioma.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Considero que la situación es compleja.",
+    "PTBR":"Considero que a situação é complexa.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Considero que hay alternativas mejores.",
+    "PTBR":"Considero que há alternativas melhores.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Estoy preocupado.",
+    "PTBR":"Estou preocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"No estoy seguro de qué hacer.",
+    "PTBR":"Não tenho certeza sobre o que fazer.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Quiero ir al baño.",
+    "PTBR":"Quero ir ao banheiro.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Yo tengo una casa.",
+    "PTBR":"Eu tenho uma casa.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"No estoy seguro de si es correcto.",
+    "PTBR":"Não tenho certeza sobre se está certo.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"Me gustaría cambiar de trabajo.",
+    "PTBR":"Eu gostaria de mudar de trabalho.",
+    "CEFR":"B1"
+  },
+  {
+    "ESP":"A pesar de la falta de tiempo, sigo adelante.",
+    "PTBR":"Apesar de a falta de tempo, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"Considero que es necesario mejorar esto.",
+    "PTBR":"Considero que é necessário melhorar isso.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Necesito información.",
+    "PTBR":"Preciso de informação.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"A pesar de los errores cometidos, sigo adelante.",
+    "PTBR":"Apesar de os erros cometidos, sigo em frente.",
+    "CEFR":"B2"
+  },
+  {
+    "ESP":"Estoy enfermo.",
+    "PTBR":"Estou doente.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Quiero pan.",
+    "PTBR":"Quero pão.",
+    "CEFR":"A1"
+  },
+  {
+    "ESP":"Estoy ocupado.",
+    "PTBR":"Estou ocupado.",
+    "CEFR":"A2"
+  },
+  {
+    "ESP":"Si bien los resultados aún no sean concluyentes, debemos seguir avanzando.",
+    "PTBR":"Embora os resultados ainda não sejam conclusivos, devemos seguir avançando.",
+    "CEFR":"C1"
+  },
+  {
+    "ESP":"No estoy seguro de cómo resolver esto.",
+    "PTBR":"Não tenho certeza sobre como resolver isso.",
+    "CEFR":"B1"
+  }
 ]

@@ -1,41 +1,54 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Treino ES → PTBR — SRS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SRS Espanhol → Português</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-  <header class="top">
-    <h1>Treino de Tradução ES → PTBR</h1>
+<body class="bg-gray-950 text-gray-200 min-h-screen flex flex-col">
+  <header class="p-4 border-b border-gray-800 text-center text-xl font-semibold">
+    Sistema SRS — Espanhol → Português
   </header>
 
-  <main class="container">
-    <div class="card">
-      <p class="label">Frase (ESP)</p>
-      <p id="fraseEsp" class="frase">...</p>
+  <main class="flex-1 flex flex-col items-center p-4">
+    <div class="w-full max-w-xl bg-gray-900/60 backdrop-blur p-6 rounded-xl shadow-lg space-y-4">
 
-      <p class="label">Linha: <span id="linhaNum">-</span> | Nível CEFR: <span id="nivelCEFR">-</span></p>
-
-      <button id="btnOuvir" class="btn">Ouvir frase</button>
-
-      <div class="input-group">
-        <label for="respostaUsuario">Sua tradução (PTBR)</label>
-        <input type="text" id="respostaUsuario" autocomplete="off" placeholder="Digite aqui">
+      <div class="text-sm opacity-70">
+        Linha atual: <span id="linhaDisplay">—</span>
+        • CEFR: <span id="nivelDisplay">—</span>
       </div>
 
-      <button id="btnConferir" class="btn btn-primary">Conferir tradução</button>
+      <div class="text-2xl font-bold text-center" id="fraseESP">
+        Carregando…
+      </div>
 
-      <p id="resultado" class="resultado"></p>
+      <button id="btnOuvir"
+        class="w-full py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition">
+        🔊 Ouvir frase
+      </button>
 
-      <button id="btnProxima" class="btn">Próxima frase</button>
-    </div>
+      <input id="respostaUsuario" type="text" placeholder="Digite a tradução em PTBR"
+        class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-indigo-500">
 
-    <div class="stats">
-      <p>Acertos: <span id="acertos">0</span></p>
-      <p>Erros: <span id="erros">0</span></p>
+      <button id="btnConferir"
+        class="w-full py-2 rounded-lg bg-green-600 hover:bg-green-500 transition">
+        Conferir tradução
+      </button>
+
+      <div id="resultado" class="text-center text-lg font-semibold"></div>
+
+      <button id="btnProxima"
+        class="w-full py-2 rounded-lg bg-blue-600 hover:bg-blue-500 transition">
+        Próxima frase
+      </button>
+
+      <div class="text-sm opacity-60 text-center pt-2">
+        Acertos: <span id="acertos">0</span> • Erros: <span id="erros">0</span>
+      </div>
+
     </div>
   </main>
 

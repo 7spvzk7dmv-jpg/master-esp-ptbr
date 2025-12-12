@@ -1,436 +1,365 @@
 /*
-  app.js - ES -> PTBR trainer (full version)
-  Features:
-  - SRS (SM-2 simplified)
-  - Tolerant correction (token overlap + Levenshtein)
-  - Weighted queue / intelligent scheduling
-  - History in localStorage
-  - Dark mode, dashboard, export/reset
-  - TTS in es-MX (Latino-Americana)
+  app_es.js
+  Español → PTBR
+  - dataset: data/frases_es.json
+  - TTS: es-ES (Espanha)
+  - CEFR adaptativo (AUTO)
+  - SRS (SM-2 simplificado)
+  - Anti-falso-positivo: overlap >=55% ou Levenshtein <=18%
+  - Código limpo (sem logs)
 */
 
-const DATA_PATH = 'data/frases_es.json';
-const STORAGE_KEY = 'srs_es_progress_v1';
-const HISTORY_KEY = 'srs_es_history_v1';
+const DATA_PATH_ES = "data/frases_es.json";
+const STORAGE_KEY_ES = "srs_es_progress_v1";
+const HISTORY_KEY_ES = "srs_es_history_v1";
 
-let frases = [];
-let srs = {};
-let current = null;
+let frasesEs = [];
+let srsEs = {};
+let currentEs = null;
 
-const today = new Date().toISOString().slice(0,10);
+let nivelAtualEs = "A1";
+let janelaContagemEs = 0;
+let acertosJanelaEs = 0;
 
-const el = {
-  linha: document.getElementById('linha'),
-  frase: document.getElementById('fraseESP'),
-  resposta: document.getElementById('resposta'),
-  resultado: document.getElementById('resultado'),
-  listenBtn: document.getElementById('listenBtn'),
-  checkBtn: document.getElementById('checkBtn'),
-  skipBtn: document.getElementById('skipBtn'),
-  due: document.getElementById('due'),
-  totalCount: document.getElementById('totalCount'),
-  dueCount: document.getElementById('dueCount'),
-  todayCorrect: document.getElementById('todayCorrect'),
-  todayWrong: document.getElementById('todayWrong'),
-  dashboard: document.getElementById('dashboard'),
-  openDashboard: document.getElementById('openDashboard'),
-  historyPanel: document.getElementById('historyPanel'),
-  historyList: document.getElementById('historyList'),
-  closeHistory: document.getElementById('closeHistory'),
-  toggleTheme: document.getElementById('toggleTheme'),
-  exportBtn: document.getElementById('exportBtn'),
-  resetBtn: document.getElementById('resetBtn'),
-  downloadData: document.getElementById('downloadData')
+const todayStrEs = new Date().toISOString().slice(0,10);
+
+/* DOM elements (must exist in your ESP index.html) */
+const elEs = {
+  linha: document.getElementById("linha"),
+  frase: document.getElementById("fraseESP"),
+  resposta: document.getElementById("resposta"),
+  resultado: document.getElementById("resultado"),
+  listenBtn: document.getElementById("listenBtn"),
+  checkBtn: document.getElementById("checkBtn"),
+  skipBtn: document.getElementById("skipBtn"),
+  due: document.getElementById("due"),
+  totalCount: document.getElementById("totalCount"),
+  dueCount: document.getElementById("dueCount"),
+  todayCorrect: document.getElementById("todayCorrect"),
+  todayWrong: document.getElementById("todayWrong"),
+  dashboard: document.getElementById("dashboard"),
+  historyPanel: document.getElementById("historyPanel"),
+  historyList: document.getElementById("historyList"),
+  closeHistory: document.getElementById("closeHistory"),
+  openDashboard: document.getElementById("openDashboard"),
+  toggleTheme: document.getElementById("toggleTheme"),
+  exportBtn: document.getElementById("exportBtn"),
+  resetBtn: document.getElementById("resetBtn"),
+  downloadData: document.getElementById("downloadData")
 };
 
-/* ============================================================
-   NORMALIZAÇÃO + CORREÇÃO TOLERANTE
-   ============================================================ */
-
-function norm(s){
-  if(!s) return '';
-  return s
+/* ---------- Normalization & matching ---------- */
+function normTextEs(s){
+  if(!s) return "";
+  return s.toString()
     .toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
-    .replace(/[\"'`.,;:!?()\-]/g,'')
-    .replace(/\s+/g,' ')
+    .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/[\"'`.,;:!?()\-¿¡]/g,"")
+    .replace(/\s+/g," ")
     .trim();
 }
 
-function levenshtein(a,b){
-  const m=[];
+function levenshteinEs(a,b){
+  const m = [];
   for(let i=0;i<=a.length;i++) m[i]=[i];
   for(let j=0;j<=b.length;j++) m[0][j]=j;
-
   for(let i=1;i<=a.length;i++){
     for(let j=1;j<=b.length;j++){
       const cost = a[i-1]===b[j-1]?0:1;
-      m[i][j]=Math.min(
-        m[i-1][j]+1,
-        m[i][j-1]+1,
-        m[i-1][j-1]+cost
-      );
+      m[i][j] = Math.min(m[i-1][j]+1, m[i][j-1]+1, m[i-1][j-1]+cost);
     }
   }
   return m[a.length][b.length];
 }
 
-function isCorrect(user,target){
-  const a = norm(user);
-  const b = norm(target);
-
-  if(a.length === 0) return false;
+function isCorrectEs(user, target){
+  const a = normTextEs(user);
+  const b = normTextEs(target);
+  if(a.length===0) return false;
   if(a === b) return true;
 
-  // Overlap de tokens ≥ 40%
   const at = a.split(" ");
   const bt = b.split(" ");
   const common = at.filter(t => bt.includes(t)).length;
   const ratio = common / Math.max(bt.length,1);
+  if(ratio >= 0.55) return true;
 
-  if(ratio >= 0.40) return true;
-
-  // Levenshtein ≤ 30%
-  const dist = levenshtein(a,b);
-  const maxDist = Math.ceil(b.length * 0.30);
-
+  const dist = levenshteinEs(a,b);
+  const maxDist = Math.ceil(b.length * 0.18);
   return dist <= maxDist;
 }
 
-/* ============================================================
-   ARMAZENAMENTO LOCAL
-   ============================================================ */
-
-function loadJSON(path){ return fetch(path).then(r=>r.json()); }
-
-function loadProgress(){
-  const raw = localStorage.getItem(STORAGE_KEY);
-  if(raw) srs = JSON.parse(raw);
+/* ---------- Storage & history ---------- */
+function loadProgressEs(){
+  const raw = localStorage.getItem(STORAGE_KEY_ES);
+  if(raw) try { srsEs = JSON.parse(raw); } catch(e){ srsEs = {}; }
 }
 
-function saveProgress(){
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(srs));
+function saveProgressEs(){
+  localStorage.setItem(STORAGE_KEY_ES, JSON.stringify(srsEs));
 }
 
-function loadHistory(){
-  const raw = localStorage.getItem(HISTORY_KEY);
+function loadHistoryEs(){
+  const raw = localStorage.getItem(HISTORY_KEY_ES);
   if(!raw) return [];
-  try { return JSON.parse(raw); } catch(e){ return []; }
+  try { return JSON.parse(raw); } catch(e) { return []; }
 }
 
-function pushHistory(entry){
-  const h = loadHistory();
+function pushHistoryEs(entry){
+  const h = loadHistoryEs();
   h.unshift(entry);
   if(h.length > 500) h.length = 500;
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(h));
+  localStorage.setItem(HISTORY_KEY_ES, JSON.stringify(h));
 }
 
-/* ============================================================
-   SRS - INICIALIZAÇÃO
-   ============================================================ */
-
-function initSRS(linha){
-  if(!srs[linha]){
-    srs[linha] = {
+/* ---------- SRS init ---------- */
+function initSrsEntryEs(linha){
+  if(!srsEs[linha]){
+    srsEs[linha] = {
       linha,
-      interval: 0,
-      ease: 2.5,
       reps: 0,
+      ease: 2.5,
+      interval: 0,
       lapses: 0,
-      due: today,
       corrects: 0,
       wrongs: 0,
-      lastAnswer: null
+      due: todayStrEs
     };
   }
 }
 
-function initAll(){
-  frases.forEach(f => initSRS(f.linha));
-  saveProgress();
+function initAllEs(){
+  frasesEs.forEach(f => initSrsEntryEs(f.linha));
+  saveProgressEs();
 }
 
-/* ============================================================
-   SRS - SELEÇÃO DE CARTÃO (FILA INTELIGENTE)
-   ============================================================ */
-
-function computeDueCount(){
+/* ---------- Selection & stats ---------- */
+function computeDueCountEs(){
   const now = new Date().toISOString().slice(0,10);
-  const due = Object.values(srs).filter(x => x.due <= now).length;
-  el.dueCount.textContent = due;
-  el.totalCount.textContent = frases.length;
+  const due = Object.values(srsEs).filter(x => x.due <= now).length;
+  if(elEs.dueCount) elEs.dueCount.textContent = due;
+  if(elEs.totalCount) elEs.totalCount.textContent = frasesEs.length;
 }
 
-function pickNext(){
+function pickNextEs(){
   const now = new Date().toISOString().slice(0,10);
+  let candidates = frasesEs.filter(f => srsEs[f.linha] && srsEs[f.linha].due <= now);
 
-  let due = frases.filter(f => srs[f.linha].due <= now);
-
-  if(due.length === 0){
-    return frases.slice().sort((a,b)=>
-      new Date(srs[a.linha].due) - new Date(srs[b.linha].due)
-    )[0];
+  if(candidates.length === 0){
+    candidates = frasesEs.filter(f => f.nivel === nivelAtualEs);
+    if(candidates.length === 0) candidates = frasesEs.slice();
   }
 
-  const weighted = due.map(f => {
-    const meta = srs[f.linha];
-    const weight = 1 + meta.lapses*3 + (meta.interval===0 ? 2 : 0);
+  const weighted = candidates.map(f => {
+    const meta = srsEs[f.linha] || {lapses:0, interval:0};
+    const weight = 1 + (meta.lapses || 0) * 3 + ((meta.interval || 0) === 0 ? 2 : 0);
     return {f, weight};
   });
 
-  const total = weighted.reduce((s,w)=>s+w.weight,0);
+  const total = weighted.reduce((s,w) => s + w.weight, 0);
   let r = Math.random() * total;
-
   for(const w of weighted){
     r -= w.weight;
     if(r <= 0) return w.f;
   }
-
-  return weighted[weighted.length-1].f;
+  return weighted[weighted.length - 1].f;
 }
 
-/* ============================================================
-   RENDER E FALA
-   ============================================================ */
-
-function renderCard(card){
-  current = card;
-  el.linha.textContent = card.linha;
-  el.frase.textContent = card.ESP;
-  el.resposta.value = "";
-  el.resultado.innerHTML = "";
-  el.due.textContent = srs[card.linha].due;
+/* ---------- Render & TTS ---------- */
+function renderCardEs(card){
+  currentEs = card;
+  if(elEs.linha) elEs.linha.textContent = card.linha;
+  if(elEs.frase) elEs.frase.textContent = card.ESP || card.ESP;
+  if(elEs.resposta) elEs.resposta.value = "";
+  if(elEs.resultado) elEs.resultado.innerHTML = "";
+  if(elEs.due && srsEs[card.linha]) elEs.due.textContent = srsEs[card.linha].due;
 }
 
-function speak(text){
+function speakEs(text){
+  if(!("speechSynthesis" in window)) return;
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = "es-ES";     // <- VOZ ESPANHA
+  u.lang = "es-ES";
   u.rate = 0.95;
-  speechSynthesis.cancel();
-  speechSynthesis.speak(u);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
 }
 
-/* ============================================================
-   SRS - APLICAÇÃO DO RESULTADO
-   ============================================================ */
-
-function applySRS(meta, correct){
+/* ---------- Apply SRS ---------- */
+function applySrsEs(meta, correct){
   if(correct){
-    meta.reps += 1;
-    meta.corrects++;
-
+    meta.reps = (meta.reps || 0) + 1;
+    meta.corrects = (meta.corrects || 0) + 1;
     if(meta.reps === 1) meta.interval = 1;
     else if(meta.reps === 2) meta.interval = 3;
-    else meta.interval = Math.round(meta.interval * meta.ease);
-
-    meta.ease = Math.max(1.3, meta.ease + 0.03);
-
+    else meta.interval = Math.round((meta.interval || 1) * meta.ease);
+    meta.ease = Math.max(1.3, (meta.ease || 2.5) + 0.03);
   } else {
-    meta.lapses++;
-    meta.wrongs++;
+    meta.lapses = (meta.lapses || 0) + 1;
+    meta.wrongs = (meta.wrongs || 0) + 1;
     meta.reps = 0;
     meta.interval = 0;
-    meta.ease = Math.max(1.3, meta.ease - 0.15);
+    meta.ease = Math.max(1.3, (meta.ease || 2.5) - 0.15);
   }
-
   const next = new Date();
-  next.setDate(next.getDate() + meta.interval);
+  next.setDate(next.getDate() + (meta.interval || 0));
   meta.due = next.toISOString().slice(0,10);
-  meta.lastAnswer = new Date().toISOString();
-
-  saveProgress();
+  saveProgressEs();
 }
 
-/* ============================================================
-   FEEDBACK AO USUÁRIO
-   ============================================================ */
-
-function showFeedback(correct, expected){
-  if(correct){
-    el.resultado.innerHTML = `
-      <div class="ok">
-        ✅ Correto!
-        <br><small>${expected}</small>
-      </div>`;
-  } else {
-    el.resultado.innerHTML = `
-      <div class="bad">
-        ❌ Incorreto.
-        <br><strong>${expected}</strong>
-      </div>`;
+/* ---------- Adaptive ---------- */
+function updateAdaptiveEs(correct){
+  janelaContagemEs++;
+  if(correct) acertosJanelaEs++;
+  if(janelaContagemEs >= 12){
+    const acc = acertosJanelaEs / janelaContagemEs;
+    if(acc >= 0.75){
+      if(nivelAtualEs === "A1") nivelAtualEs = "A2";
+      else if(nivelAtualEs === "A2") nivelAtualEs = "B1";
+      else if(nivelAtualEs === "B1") nivelAtualEs = "B2";
+      else if(nivelAtualEs === "B2") nivelAtualEs = "C1";
+    } else if(acc <= 0.35){
+      if(nivelAtualEs === "C1") nivelAtualEs = "B2";
+      else if(nivelAtualEs === "B2") nivelAtualEs = "B1";
+      else if(nivelAtualEs === "B1") nivelAtualEs = "A2";
+      else if(nivelAtualEs === "A2") nivelAtualEs = "A1";
+    }
+    janelaContagemEs = 0;
+    acertosJanelaEs = 0;
   }
 }
 
-/* ============================================================
-   HANDLERS
-   ============================================================ */
+/* ---------- Handlers ---------- */
+function handleCheckEs(){
+  const user = elEs.resposta ? elEs.resposta.value.trim() : "";
+  const expected = currentEs ? currentEs.PTBR : "";
+  const correct = isCorrectEs(user, expected);
 
-function handleCheck(){
-  const ans = el.resposta.value.trim();
-  const expected = current.PTBR;
-  const correct = isCorrect(ans, expected);
+  const meta = srsEs[currentEs.linha];
+  applySrsEs(meta, correct);
 
-  applySRS(srs[current.linha], correct);
-
-  pushHistory({
-    linha: current.linha,
-    esp: current.ESP,
-    answer: ans,
-    correct,
-    ptbr: expected,
-    time: new Date().toISOString()
+  pushHistoryEs({
+    time: new Date().toISOString(),
+    linha: currentEs.linha,
+    ESP: currentEs.ESP,
+    PTBR: expected,
+    answer: user,
+    correct: correct,
+    nivel: currentEs.nivel
   });
 
-  renderStats();
-  showFeedback(correct, expected);
+  updateAdaptiveEs(correct);
+
+  if(elEs.resultado) {
+    elEs.resultado.innerHTML = correct ? `<div class="ok">✅ Correto<br><small>${expected}</small></div>` : `<div class="bad">❌ Incorreto<br><strong>${expected}</strong></div>`;
+  }
+
+  renderStatsEs();
 }
 
-function handleSkip(){
-  applySRS(srs[current.linha], false);
-  pushHistory({
-    linha: current.linha,
-    esp: current.ESP,
+function handleSkipEs(){
+  const meta = srsEs[currentEs.linha];
+  applySrsEs(meta, false);
+  pushHistoryEs({
+    time: new Date().toISOString(),
+    linha: currentEs.linha,
+    ESP: currentEs.ESP,
+    PTBR: currentEs.PTBR,
     skipped: true,
     correct: false,
-    ptbr: current.PTBR,
-    time: new Date().toISOString()
+    nivel: currentEs.nivel
   });
-  renderStats();
-  nextCard();
+  renderStatsEs();
+  nextCardEs();
 }
 
-function nextCard(){
-  renderCard(pickNext());
+function nextCardEs(){
+  const card = pickNextEs();
+  renderCardEs(card);
 }
 
-/* ============================================================
-   HISTÓRICO E DASHBOARD
-   ============================================================ */
-
-function renderStats(){
-  computeDueCount();
-  const h = loadHistory();
-  const t = today;
-
-  el.todayCorrect.textContent = h.filter(x => x.time.slice(0,10)===t && x.correct).length;
-  el.todayWrong.textContent = h.filter(x => x.time.slice(0,10)===t && !x.correct).length;
+/* ---------- Stats / History ---------- */
+function renderStatsEs(){
+  computeDueCountEs();
+  const history = loadHistoryEs();
+  const t = new Date().toISOString().slice(0,10);
+  if(elEs.todayCorrect) elEs.todayCorrect.textContent = history.filter(h => h.time && h.time.slice(0,10) === t && h.correct).length;
+  if(elEs.todayWrong) elEs.todayWrong.textContent = history.filter(h => h.time && h.time.slice(0,10) === t && !h.correct).length;
 }
 
-function renderHistoryPanel(){
-  const h = loadHistory();
-  el.historyList.innerHTML = "";
-
-  h.slice(0,200).forEach(e=>{
+function renderHistoryEs(){
+  const h = loadHistoryEs();
+  if(!elEs.historyList) return;
+  elEs.historyList.innerHTML = "";
+  h.slice(0,200).forEach(item => {
     const li = document.createElement("li");
-    li.innerHTML = `
-      <small>${e.time}</small> —
-      <strong>#${e.linha}</strong> —
-      "${e.esp}"
-      — ${e.correct ? "<span style='color:green'>✔</span>" : "<span style='color:red'>✖</span>"}
-    `;
-    el.historyList.appendChild(li);
+    li.innerHTML = `<small>${item.time}</small> — <strong>#${item.linha}</strong> — "${item.ESP}" — ${item.correct ? "<span style='color:green'>✔</span>" : "<span style='color:red'>✖</span>"}`;
+    elEs.historyList.appendChild(li);
   });
 }
 
-/* ============================================================
-   DARK MODE, EXPORT, RESET
-   ============================================================ */
-
-function tryLoadTheme(){
+/* ---------- Theme, export, reset ---------- */
+function tryLoadThemeEs(){
   const t = localStorage.getItem("ui_theme");
-
-  if(t){
-    document.documentElement.setAttribute("data-theme", t);
-  } else {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+  if(t) document.documentElement.setAttribute("data-theme", t);
+  else {
+    const prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute('data-theme', prefers ? "dark" : "light");
   }
 }
 
-function exportSRS(){
-  const blob = new Blob([JSON.stringify(srs,null,2)],{type:"application/json"});
-  const url = URL.createObjectURL(blob);
+function exportSrsEs(){
+  const blob = new Blob([JSON.stringify(srsEs, null, 2)], {type: "application/json"});
   const a = document.createElement("a");
-  a.href = url;
+  a.href = URL.createObjectURL(blob);
   a.download = "srs_es_export.json";
   a.click();
-  URL.revokeObjectURL(url);
+  URL.revokeObjectURL(a.href);
 }
 
-function resetProgress(){
-  if(!confirm("Tem certeza que quer resetar TODO o progresso?")){
-    return;
-  }
-  localStorage.removeItem(STORAGE_KEY);
-  localStorage.removeItem(HISTORY_KEY);
-  srs = {};
-  initAll();
-  renderStats();
-  nextCard();
+function resetProgressEs(){
+  if(!confirm("Resetar todo o progresso do treino de Espanhol?")) return;
+  localStorage.removeItem(STORAGE_KEY_ES);
+  localStorage.removeItem(HISTORY_KEY_ES);
+  srsEs = {};
+  initAllEs();
+  renderStatsEs();
+  nextCardEs();
 }
 
-/* ============================================================
-   EVENTOS
-   ============================================================ */
-
-el.listenBtn.addEventListener("click", ()=> speak(current.ESP));
-el.checkBtn.addEventListener("click", handleCheck);
-el.skipBtn.addEventListener("click", handleSkip);
-
-el.openDashboard.addEventListener("click", ()=>{
-  el.dashboard.classList.toggle("hidden");
-  renderStats();
-});
-
-el.toggleTheme.addEventListener("click", ()=>{
+/* ---------- Events binding ---------- */
+if(elEs.listenBtn) elEs.listenBtn.addEventListener("click", ()=> speakEs(currentEs ? currentEs.ESP : ""));
+if(elEs.checkBtn) elEs.checkBtn.addEventListener("click", handleCheckEs);
+if(elEs.skipBtn) elEs.skipBtn.addEventListener("click", handleSkipEs);
+if(elEs.openDashboard) elEs.openDashboard.addEventListener("click", ()=> { if(elEs.dashboard) elEs.dashboard.classList.toggle("hidden"); renderStatsEs(); });
+if(elEs.closeHistory) elEs.closeHistory.addEventListener("click", ()=> { if(elEs.historyPanel) elEs.historyPanel.classList.add("hidden"); });
+if(elEs.toggleTheme) elEs.toggleTheme.addEventListener("click", ()=> {
   const root = document.documentElement;
-  const currentTheme = root.getAttribute("data-theme");
-  const next = currentTheme === "dark" ? "light" : "dark";
+  const cur = root.getAttribute("data-theme");
+  const next = cur === "dark" ? "light" : "dark";
   root.setAttribute("data-theme", next);
   localStorage.setItem("ui_theme", next);
 });
+if(elEs.exportBtn) elEs.exportBtn.addEventListener("click", exportSrsEs);
+if(elEs.resetBtn) elEs.resetBtn.addEventListener("click", resetProgressEs);
+if(elEs.downloadData) elEs.downloadData.addEventListener("click", ()=>{
+  const data = { srs: srsEs, history: loadHistoryEs() };
+  const blob = new Blob([JSON.stringify(data,null,2)], {type: "application/json"});
+  elEs.downloadData.href = URL.createObjectURL(blob);
+});
 
-if(el.closeHistory){
-  el.closeHistory.addEventListener("click", ()=>{
-    el.historyPanel.classList.add("hidden");
-  });
-}
-
-if(el.exportBtn){
-  el.exportBtn.addEventListener("click", exportSRS);
-}
-
-if(el.resetBtn){
-  el.resetBtn.addEventListener("click", resetProgress);
-}
-
-if(el.downloadData){
-  el.downloadData.addEventListener("click", ()=>{
-    const data = { srs, history: loadHistory() };
-    const blob = new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
-    const url = URL.createObjectURL(blob);
-    el.downloadData.href = url;
-  });
-}
-
-/* ============================================================
-   BOOT
-   ============================================================ */
-
-async function boot(){
-  try{
-    frases = await loadJSON(DATA_PATH);
+/* ---------- Boot ---------- */
+async function bootEs(){
+  try {
+    frasesEs = await fetch(DATA_PATH_ES).then(r => r.json());
   } catch(e){
-    el.frase.textContent = "Erro ao carregar data/frases_es.json";
-    console.error("Erro:", e);
+    if(elEs.frase) elEs.frase.textContent = "Erro ao carregar dataset (data/frases_es.json)";
     return;
   }
-
-  loadProgress();
-  initAll();
-  renderStats();
-  nextCard();
-  tryLoadTheme();
+  loadProgressEs();
+  initAllEs();
+  renderStatsEs();
+  tryLoadThemeEs();
+  nextCardEs();
 }
 
-boot();
+bootEs();
